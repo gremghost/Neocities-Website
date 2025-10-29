@@ -1,0 +1,26 @@
+const draggable = document.getElementById('draggable');
+
+let offsetX, offsetY;
+
+draggable.addEventListener('mousedown', (e) => {
+    // Calculate the offset position
+    offsetX = e.clientX - draggable.getBoundingClientRect().left;
+    offsetY = e.clientY - draggable.getBoundingClientRect().top;
+
+    // Add event listeners to the document for mousemove and mouseup
+    document.addEventListener('mousemove', mouseMoveHandler);
+    document.addEventListener('mouseup', mouseUpHandler);
+});
+
+function mouseMoveHandler(e) {
+    // Update the position of the draggable element
+    draggable.style.left = `${e.clientX - offsetX}px`;
+    draggable.style.top = `${e.clientY - offsetY}px`;
+    draggable.style.position = 'absolute'; // Set position to absolute
+}
+
+function mouseUpHandler() {
+    // Remove event listeners when mouse is released
+    document.removeEventListener('mousemove', mouseMoveHandler);
+    document.removeEventListener('mouseup', mouseUpHandler);
+}
