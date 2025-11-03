@@ -48,6 +48,13 @@ body {
      margin-left: 10px;
 }
 
+#drive {
+     color: #ab19ff;
+     font-family: "DOS";
+     font-size: 20px;
+     margin-left: 10px;
+}
+
 @font-face {
      font-family: "Alte Haas";
      src: url("fonts/AlteHaasGroteskRegular.ttf");
@@ -58,6 +65,16 @@ body {
      src: url("fonts/ModernDOS8x8.ttf");
 }
 
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.terminal_main{
+  display: flex;
+  flex-direction: row;
+}
+
 #inputTerm{
      background-color: transparent;
      color: #ab19ff;
@@ -66,7 +83,6 @@ body {
      outline: none;
      font-family: "DOS";
      font-size: 20px;
-     margin-left: 10px;
 }
 
 .displayTerm{

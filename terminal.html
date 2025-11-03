@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html style="width:800px; height: 600px;">
 <head><div class="crt"></div></head>
 <link rel="stylesheet" href="stylesheet.css">     
-<body style="background-color: black;">
+<body style="background-color: black; overflow: hidden;">
     <div>
         <p id="boot">
             gremOS is not a registered trademark of any company because this doesn’t actually exist.
@@ -18,7 +18,11 @@
         <div class="displayTerm"></div>
     </div>
 
-    <input type="text" id="inputTerm" autofocus/>
+    <div class="container">
+        <p id="drive">C:\></p>
+        <input type="text" id="inputTerm" class="form-control-inline" autofocus/>
+    </div>
+
 
 <script src="terminal.js">
 </script>
