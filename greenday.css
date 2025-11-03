@@ -1,0 +1,70 @@
+#gdlogo {
+    width: 400px;
+}
+
+
+#theboys {
+    width: 200px;
+}
+
+#basketcase {
+    height: 200px;
+}
+
+#text {
+    color: white;
+    font-family: "nimrod."
+}
+
+.albums {
+    position: absolute;
+    left: 275px;
+    top: 400px;
+    width: 200px;
+}
+
+.albums:hover {
+    transform: scale(1.05);
+}
+
+.songs {
+    position: absolute;
+    left: 875px;
+    top: 400px;
+    width: 250px;
+}
+
+.songs:hover {
+    transform: scale(1.05);
+}
+
+#billie {
+    z-index: -1;
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    width: 400px;
+}
+
+#mike {
+    z-index: -1;
+    position: absolute;
+    top: 350px;
+    left: 800px;
+    width: 400px;
+}
+
+#tre {
+    z-index: -1;
+    position: absolute;
+    top: 350px;
+    left: 1400px;
+    width: 400px;
+}
+
+
+/*credit to https://www.deviantart.com/lyonstype/art/Nimrod-headline-font-950808446*/
+@font-face {
+     font-family: "nimrod.";
+     src: url("fonts/Nimrod-1.otf");
+}
