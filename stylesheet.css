@@ -73,6 +73,8 @@ body {
 .terminal_main{
   display: flex;
   flex-direction: row;
+  width: 800px;
+  height: 600px;
 }
 
 #inputTerm{
@@ -343,6 +345,15 @@ table {
 
 .div3 {
   position: absolute;
-  top: 800px;
-  left: 850px;
+  top: 750px;
+  left: 545px
+}
+
+.test {
+  position: absolute;
+  right: 50px;
+  top: 137px;
+}
+.test:hover {
+  transform: scale(1.05);
 }

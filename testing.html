@@ -7,11 +7,19 @@
                 cursor: pointer;
                 -webkit-user-drag: none;
             } 
+            .test {
+                width: 200px;
+            }
+            .test:hover {
+                transform: scale(1.05);
+            }
         </style>
     <body>
         <div id="draggable">
             <img draggable="false" src="images/ad window/mainwin.png">
         </div>
+
+        <img class="test" src="images/test images/man1.png">
 
         <script>
 const draggable = document.getElementById('draggable');
