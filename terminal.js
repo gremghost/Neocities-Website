@@ -3,6 +3,8 @@
     //inputted text does not sit at the same spot the stored text sits
     //the text needs to behave more like how dos handles it
 
+    //fake
+
 //things needing to be implemented
     //links for the dir command, instead of social links let's make it page links :3333
     //crt screen effect
