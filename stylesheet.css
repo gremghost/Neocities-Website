@@ -370,3 +370,27 @@ hr {
   width: 800px;
   left: 500px;
 }
+
+#links {
+  font-size: 20px;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+#header2 {
+  color: white;
+  position: absolute;
+  top: 140px;
+  right: 50px;
+}
+
+#yomom {
+  position: absolute;
+  top: 200px;
+  right: 40px;
+  width: 400px;
+  padding: 5px;
+}
