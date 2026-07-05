@@ -1,0 +1,45 @@
+#whoare {
+    font-family: 'Courier Prime';
+    color: white;
+    text-align: center;
+}
+
+#backbutton {
+    position: relative;
+    align-content: center;
+}
+
+#council1 {
+    font-family: 'Courier Prime';
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none
+}
+
+.inline-block-child {
+
+    display: inline-block;
+}
+
+#yomom2 {
+    position: relative;
+    display: inline-block;
+    color: lightgreen;
+    left: -9.7vw;
+    top: -2.5vw;
+    font-size: 20px;
+}
+
+#yomom {
+    position: relative;
+    display: inline-block;
+    color: cornflowerblue;
+    left: 7.4vw;
+    top: 4vw;
+    font-size: 20px; 
+}

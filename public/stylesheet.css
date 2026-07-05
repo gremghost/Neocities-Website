@@ -11,6 +11,55 @@
      height: 600px;
 }
 
+#pranked {
+  position: absolute;
+  width: 200px;
+}
+
+.fourohfour {
+  position: relative;
+}
+
+#uhoh {
+  position: relative;
+  color: white;
+  font-size: 30px;
+  text-shadow: black;
+  font-family: "Comic Relief";
+}
+
+#uhoh2 {
+  position: relative;
+  color: white;
+  font-size: 30px;
+  text-shadow: black;
+  font-family: "Comic Relief";
+  word-wrap: break-word;
+  text-align: center;
+}
+
+#backhome {
+  position: relative;
+  width: 250px;
+}
+
+#sucks {
+  position: relative;
+  width: 1000px;
+}
+
+#arrow1 {
+  position: relative;
+  width: 200px;
+  top: -3.5vw;
+}
+
+#arrow2 {
+  position: relative;
+  width: 200px;
+  top: -3.5vw;
+}
+
 .floating {
             position: relative;
             animation: float 3s ease-in-out infinite;
