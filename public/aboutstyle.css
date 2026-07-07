@@ -1,0 +1,42 @@
+#guestbook {
+    position: relative;
+    top: .17vw;
+    left: .3vw;
+}
+
+#div2 {
+    position: relative;
+    top: 11.35vw;
+    left: -25.5vw;
+}
+
+#div3 {
+    position: relative;
+    top: -22.5vw;
+    left: 4vw;
+    
+}
+
+#div4 {
+    position: relative;
+    top: -21.7vw;
+    left: 39.5vw;
+}
+
+a {
+    color: white;
+    font-size: 23px;
+}
+
+#fobgif {
+    position: relative;
+    left: -49.23vw;
+    top: -3.7vw;
+}
+
+#backbutton {
+    position: relative;
+    top: -20vw;
+    left: 14vw;
+}
+
