@@ -409,9 +409,10 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 10px solid #ccc;
     margin: 1em 0;
     padding: 0;
+    width: 1000px;
 }
 
 .test1 {
@@ -442,4 +443,38 @@ a {
   right: 40px;
   width: 400px;
   padding: 5px;
+}
+
+.div2A {
+  background-image: url("backgrounds/misc326.jpg");
+  border: 2px solid white;
+  position: absolute;
+  width: 1000px;
+  height: 50px;
+  left: 23.9vw;
+  top: 17vh;
+}
+
+#green {
+  position: relative;
+  top: .6vw;
+  background-color: limegreen
+}
+
+#eric {
+  position: relative;
+  top: .6vw;
+  background-color: beige
+}
+
+#about2 {
+  position: relative;
+  top: .6vw;
+  background-color: palevioletred;
+}
+
+#fish {
+  position: relative;
+  top: .6vw;
+  background-color: gray;
 }
