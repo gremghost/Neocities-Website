@@ -31,7 +31,7 @@
             <table border="1" style="display: inline-block; position: relative; top: -5vw;">
                 <tr>
                     <td>
-                        <a style="color:white;" href="invalid.html">Who is Eric? What is an Eric?</a>
+                        <a style="color:white;" href="eric1.html">Who is Eric? What is an Eric?</a>
                     </td>
                 </tr>
                 <tr>
@@ -60,7 +60,7 @@
             <table border="1" style="display: inline-block; margin: 25px;">
                 <tr>
                     <td>
-                        <a style="color:white" href="invalid.html">Who is Eric? What is an Eric?</a>
+                        <a style="color:white" href="eric1.html">Who is Eric? What is an Eric?</a>
                     </td>
                 </tr>
                 <tr>
@@ -80,13 +80,24 @@
                 </tr>
                 <tr>
                     <td>
-                        <a style="color: white" href="invalid.html">I accidentally erased 10 seconds of time.</a>
+                        <a style="color: white" href="tenseconds.html">I accidentally erased 10 seconds of time.</a>
                     </td>
                 </tr>
             </table>
             <br>
             <br>
             <a href="index.html"><img src="gifs/WOPJZEWX733O76WIOFFQXZNHEFM5C3DH.gif"></a>
+            <br>
+            <br>
+            <div style="position: relative; top: 4vw;">
+            <p style="color: white; font-size: 12px;">Page last modified:</p>
+            <p style="color: white; font-size: 12px;" id="demo"></p>
+            </div>
             </center>
+
+        <script>
+            const date = new Date(document.lastModified);
+            document.getElementById("demo").innerHTML = date;
+        </script>
         </body>
 </html>
