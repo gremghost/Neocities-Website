@@ -43,3 +43,44 @@ a {
     top: 4vw;
     font-size: 20px; 
 }
+
+#eric {
+    position: relative;;
+    left: -10vw;
+    top: 5vh;
+}
+
+#erictext {
+    position: relative;
+    left: 7vw;
+    top: -28vh;
+    color: white;
+    font-size: 22px;
+    font-family: 'Comic Relief';
+    text-align: left;
+}
+
+#erictext2 {
+    position: relative;
+    color: white;
+    left: -w;
+    top: -25vh;
+    font-size: 22px;
+    font-family: 'Comic Relief';
+    text-align: left;
+}
+
+#example {
+    position: relative;
+    left: vw;
+    top: -24vh;
+    border: 4px solid white;
+}
+
+#div1 {
+    width: 400px;
+}
+
+#div2 {
+    width: 600px;
+}

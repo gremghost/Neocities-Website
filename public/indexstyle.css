@@ -299,15 +299,13 @@ li {
   list-style-type: none;
 }
 
-#div4 {
-  background-image: url(backgrounds/139.png);
-  width: 100%;
-  height: 60%;
-  margin-top: 20px;
-}
-
 .div4{
-  margin-right: 50px;
+  position: absolute;
+  width: 400px;
+  height: 750px;
+  background-image: url("backgrounds/bluebrick.jpg");
+  border-left: 2px solid white;
+  left: 80vw;
 }
 
 #gif1 {
@@ -391,8 +389,12 @@ table {
 
 .div3 {
   position: absolute;
-  top: 750px;
-  left: 545px
+  background-image: url("backgrounds/tumblr_ce6a9f6b614a823bf3bedce5537ef1dc_20e3e7ab_1280.png");
+  width: 400px;
+  height: 750px;
+  top: 22.6vh;
+  left: -1vw;
+  border-right: 2px solid white;
 }
 
 .test {
@@ -445,13 +447,19 @@ a {
   padding: 5px;
 }
 
+.div1 {
+  position: absolute;
+  top: -7vw;
+  left: 19vw;
+}
+
 .div2A {
   background-image: url("backgrounds/misc326.jpg");
   border: 2px solid white;
   position: absolute;
-  width: 1000px;
+  width: 100vw;
   height: 50px;
-  left: 23.9vw;
+  left: -.1vw;
   top: 17vh;
 }
 
@@ -478,3 +486,11 @@ a {
   top: .6vw;
   background-color: gray;
 }
+
+#NIN {
+  position: relative;
+  top: .6vw;
+  background-color: black;
+  color: white;
+}
+
