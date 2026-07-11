@@ -33,6 +33,16 @@
             <img id="example" src="images/the most threatening image of your life/example.jpg" width="600" title="The scientific graph representing the location of my domain versus your universe.">
         </div>
         <a href="eric_homepage.html"><img src="gifs/WOPJZEWX733O76WIOFFQXZNHEFM5C3DH.gif"></a>
+
+        <div style="position: relative; top: 4vw; overflow: hidden;">
+            <p style="color: white; font-size: 12px;">Page last modified:</p>
+            <p style="color: white; font-size: 12px;" id="demo"></p>
+        </div>
+        </center>
+        <script>
+            const date = new Date(document.lastModified);
+            document.getElementById("demo").innerHTML = date;
+        </script>
         </center>
     </body>
 </head>
