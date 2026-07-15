@@ -50,6 +50,7 @@ a {
     top: 5vh;
 }
 
+/*eric1.html css stuff*/
 #erictext {
     position: relative;
     left: 7vw;
@@ -70,6 +71,22 @@ a {
     text-align: left;
 }
 
+#line {
+    position: relative;
+    border-top: 3px solid white;
+    top: -13vw;
+    width: 800px;
+}
+
+#erictext3A {
+    position: relative;
+    color: white;
+    left: -w;
+    top: -26vh;
+    font-family: 'Comic Relief';
+    text-align: left;
+}
+
 #example {
     position: relative;
     left: vw;
@@ -83,4 +100,35 @@ a {
 
 #div2 {
     width: 600px;
+}
+
+#div3 {
+    width: 600px;
+}
+
+#person1 {
+    position: relative;
+    color: lime;
+    font-family: 'IBM Plex Mono';
+    text-align: left;
+    top: -22vh;
+    left: -5vw
+}
+
+#person2 {
+    position: relative;
+    color: white;
+    font-family: 'IBM Plex Mono';
+    text-align: right;
+    top: -20vh;
+    left: 5vw;
+    padding-bottom: 30px;
+}
+
+#detail {
+    position: relative;
+    color: white;
+    font-family: 'IBM Plex Mono';
+    text-align: center;
+    top: -22vh;
 }

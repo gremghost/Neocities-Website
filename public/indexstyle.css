@@ -302,10 +302,18 @@ li {
 .div4{
   position: absolute;
   width: 400px;
-  height: 750px;
+  height: 780px;
   background-image: url("backgrounds/bluebrick.jpg");
   border-left: 2px solid white;
   left: 80vw;
+  top: 22.4vh;
+}
+
+.div4A {
+  position: absolute;
+  width: 50px;
+  top: 23.3vh;
+  left: 80.5vw;
 }
 
 #gif1 {
@@ -391,12 +399,18 @@ table {
   position: absolute;
   background-image: url("backgrounds/tumblr_ce6a9f6b614a823bf3bedce5537ef1dc_20e3e7ab_1280.png");
   width: 400px;
-  height: 750px;
-  top: 22.6vh;
+  height: 780px;
+  top: 22.4vh;
   left: -1vw;
   border-right: 2px solid white;
 }
 
+.div3A {
+  position: absolute;
+  width: 100px;
+  top: 23.3vh;
+  left: 15vw;
+}
 .test {
   position: absolute;
   right: 50px;
