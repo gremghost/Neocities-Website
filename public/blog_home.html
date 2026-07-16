@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="blogstyle.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+    </style>
+</head>
+    <body background="backgrounds/tumblr_0c7940bedb5329d0072d5929ba364dcc_7bf92c2d_1280.png">
+        <p id="header">the blog of kas</p>
+        <p id="subtitle">please choose which blog you wish to view !!</p>
+        <div class="introdiv">
+            <img id="msn" src="images/msn_cool-3.png">
+            <a id="website" href="invalid.html">website posts</a>
+
+            <img id="notepad" src="images/notepad-2.png">
+            <a id="personal" href="invalid.html">personal posts</a>
+        </div>
+
+        <a id="back" href="index.html"><img src="gifs/4R53DV2UR6JRT7AT3IYHJIBU5BFWB7K4.gif"></a>   
+
+        <center>
+        <div style="position: relative; top: 46.7vw; overflow: hidden;">
+        <p style="color: white; font-size: 12px;">Page last modified:</p>
+        <p style="color: white; font-size: 12px;" id="demo"></p>
+        </div>
+        </center>
+        <script>
+            const date = new Date(document.lastModified);
+            document.getElementById("demo").innerHTML = date;
+        </script>
+    </body>
+</html>

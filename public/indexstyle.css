@@ -305,6 +305,7 @@ li {
   height: 780px;
   background-image: url("backgrounds/bluebrick.jpg");
   border-left: 2px solid white;
+  border-top: 2px solid white;
   left: 80vw;
   top: 22.4vh;
 }
@@ -403,6 +404,7 @@ table {
   top: 22.4vh;
   left: -1vw;
   border-right: 2px solid white;
+  border-top: 2px solid white;
 }
 
 .div3A {
@@ -468,7 +470,7 @@ a {
 }
 
 .div2A {
-  background-image: url("backgrounds/misc326.jpg");
+  background-image: url("backgrounds/b7.gif");
   border: 2px solid white;
   position: absolute;
   width: 100vw;
@@ -479,32 +481,66 @@ a {
 
 #green {
   position: relative;
-  top: .6vw;
-  background-color: limegreen
+  top: .45vw;
+  border: 2px solid greenyellow;
+  margin-right: 4px;
 }
 
 #eric {
   position: relative;
-  top: .6vw;
-  background-color: beige
+  top: .45vw;
+  border: 2px solid white;
+  margin-right: 4px;
 }
 
 #about2 {
   position: relative;
-  top: .6vw;
-  background-color: palevioletred;
+  top: .45vw;
+  border: 2px solid yellow;
+  margin-right: 4px;
 }
 
 #fish {
   position: relative;
-  top: .6vw;
-  background-color: gray;
+  top: .45vw;
+  border: 2px solid gray;
+  margin-right: 4px;
 }
 
 #NIN {
   position: relative;
-  top: .6vw;
-  background-color: black;
-  color: white;
+  top: .45vw;
+  border: 2px solid black;
+  margin-right: 4px;
 }
 
+#blog {
+  position: relative;
+  top: .45vw;
+  border: 2px solid black;
+  margin-right: 4px;
+}
+
+#versiontext {
+  color: white;
+  font-size: 12px;
+}
+
+.versiontext {
+  position: absolute;
+  left: 45vw;
+  top: 72vh;
+  width: 400px;
+}
+
+#construct {
+  position: absolute;
+  left: -3vw;
+  top: .9vh;
+}
+
+#construct2 {
+  position: absolute;
+  left: 10vw;
+  top: .9vh;
+}
