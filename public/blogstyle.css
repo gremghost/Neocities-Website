@@ -66,3 +66,16 @@ a {
     font-size: 45px;
     text-shadow: 4px 0cm 0cm black;
 }
+
+/*personal_blog.html css*/
+
+.entry1 {
+    width: 300px;
+    border: 5px solid white;
+    padding: 20px;
+}
+
+#entry1 {
+    font-size: 20px;
+    color: white;
+}
