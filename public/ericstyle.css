@@ -132,3 +132,77 @@ a {
     text-align: center;
     top: -22vh;
 }
+
+/*blowup.html css*/
+#blowheader{
+    color: white;
+}
+
+#blowtext {
+    color: white;
+    font-size: 20px;
+}
+
+/*update.html css*/
+.line {
+    position: relative;
+    width: 300px;
+    border-top: 1px solid white;
+}
+
+#updateback {
+    font-size: 30px;
+}
+
+#updatetext {
+    font-size: 20px;
+    color: white;
+
+    position: relative;
+    overflow: none;
+    top: -6.5vh;
+}
+
+@keyframes obfuscate {
+  0% {content: var(--text-intro, "9.14ww ")}
+  15% {content: var(--text-intro, "0wkiT3A ")}
+  20% {content: var(--text-intro, "Mk4##$1 ")}
+  25% {content: var(--text-intro, "4WOsH3- ")}
+  30% {content: "wifn(w)"}
+  35% {content: "29hd3"}
+  40% {content: "oqsne"}
+  45% {content: "2bzmw"}
+  50% {content: "9*sdn"}
+  55% {content: "29331"}
+  60% {content: "b[sj2]8"}
+  65% {content: "sn37d"}
+  70% {content: "!9dh3"}
+  75% {content: var(--text-outro, "[53-2a7] ")}
+  80% {content: var(--text-outro, "03OslT ")}
+  90% {content: var(--text-outro, "P(((3$$# ")}
+  100% {content: var(--text-outro, "390245e ")}
+}
+
+.text::after {
+  transition: 250ms all;
+  content: "";
+  animation: obfuscate 1s alternate infinite;
+}
+
+.text::before {
+  content: "";
+  animation: obfuscate 3s alternate infinite;
+}
+
+.text {
+    position: relative;
+    top: -4.5vh;
+    left: 23vw;
+
+    overflow: none;
+    width: 300px;
+
+    color: white;
+    font-size: 20px;
+
+}
