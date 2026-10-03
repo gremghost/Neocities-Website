@@ -1,0 +1,170 @@
+html {
+    height: 934px;
+}
+
+/* header CSS */
+
+.header {
+    position: relative;
+
+    width: 800px;
+    height: 100px;
+    top: -1px;
+}
+
+#logo {
+    position: relative;
+    top: 0.5vh;
+}
+
+.floating {
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+    transform: translateY(0);
+    }
+
+    50% {
+    transform: translateY(-5px);
+    }
+
+    100% {
+    transform: translateY(0);
+    }
+}
+
+/* navigation CSS */
+
+.nav_main {
+    position: relative;
+
+    width: 796px;
+    height: 50px;
+    top: 0.3vh;
+
+    background-image: url("backgrounds/b7.gif");
+    border: 2px solid white;
+}
+/* sub category for buttons*/
+#green {
+    position: relative;
+
+    top: 7px;
+    margin-right: 4px;
+
+    border: 2px solid greenyellow;
+}
+
+#nin {
+    position: relative;
+
+    top: 7px;
+    margin-right: 4px;
+
+    border: 2px solid black;
+
+}
+
+#eric {
+    position: relative;
+
+    top: 7px;
+    margin-right: 4px;   
+
+    border: 2px solid white;
+
+}
+
+#fish {
+    position: relative;
+
+    top: 7px;
+    margin-right: 4px;
+    
+    border: 2px solid gray;
+}
+
+#aboutme {
+    position: relative;
+
+    top: 7px;
+    margin-right: 4px;
+
+    border: 2px solid yellow;
+}
+
+#blog {
+    position: relative;
+
+    top: 7px;
+    margin-right: 4px;
+
+    border: 2px solid black;
+}
+
+/* columns / center CSS */
+
+.content {
+    position: relative;
+
+    width: 800px;
+    height: 800px;
+    top: 6px;
+}
+
+.content-area1 {
+    position: relative;
+    float: left;
+
+    width: 196px;
+    height: 796px;
+
+    background-image: url("backgrounds/tumblr_ce6a9f6b614a823bf3bedce5537ef1dc_20e3e7ab_1280.png");
+    border: 2px solid white;
+}
+
+#buttons-galore {
+    position: relative;
+
+    top: 15px;
+}
+
+.content-area2 {
+    position: relative;
+    float: center;
+
+    width: 400px;
+    height: 796px;
+
+    background-image: url("backgrounds/purpleweb.gif");
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+/*sub category for version text*/
+.versiontext {
+    position: relative;
+    float: bottom;
+
+    width: 400px;
+    top: 750px;
+}
+
+#versiontext {
+  color: white;
+  font-size: 12px;
+}
+
+.content-area3 {
+    position: relative;
+    float: right;
+
+    width: 196px;
+    height: 796px;
+    bottom: 800px;
+
+    background-image: url("backgrounds/bluebrick.jpg");
+    border: 2px solid white;
+}

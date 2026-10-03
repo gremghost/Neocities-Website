@@ -1,0 +1,51 @@
+.fourohfour {
+    position: relative;
+}
+
+#uhoh {
+    position: relative;
+
+    font-family: "Comic Relief";
+    font-size: 30px;
+
+    color: white;
+    text-shadow: black;
+    
+}
+
+#uhoh2 {
+    position: relative;
+
+    font-family: "Comic Relief";
+    font-size: 30px;
+    word-wrap: break-word;
+    text-align: center;
+
+    color: white;
+    text-shadow: black;
+}
+
+#sucks {
+    position: relative;
+    
+    width: 1000px;
+}
+
+#arrow1 {
+    position: relative;
+
+    width: 200px;
+    top: -3.5vw;
+}
+
+#arrow2 {
+    position: relative;
+
+    width: 200px;
+    top: -3.5vw;
+}
+
+#backhome {
+    position: relative;
+    width: 250px;
+}
