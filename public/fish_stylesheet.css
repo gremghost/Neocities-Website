@@ -1,0 +1,39 @@
+.fish {
+    position: relative;
+
+    width: 800px;
+    height: 900px;
+
+}
+
+.fish-the-sequel {
+    position: relative;
+    
+    width: 725px;
+    height: 364px;
+    top: 200px;
+    right: 12px;
+}
+
+#fish-burn {
+    position: relative;
+
+    top: 30px;
+}
+
+.music-loader {
+    position: relative;
+    float: center;
+
+    width: 300px;
+    height: 50px;
+    top: 50px;
+}
+
+.gifs {
+    position: relative;
+    
+    width: 200px;
+    height: 100px;
+    top: 90px;
+}
