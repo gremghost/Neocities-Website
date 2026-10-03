@@ -149,14 +149,37 @@ html {
     float: bottom;
 
     width: 400px;
-    top: 750px;
+    top: 730px;
 }
 
 #versiontext {
-  color: white;
+  color: #BC00C2;
   font-size: 12px;
+  text-shadow: 1px 1px 1px white;
+}
+/*sub category for page modified information*/
+.page-modified {
+    position: relative;
+    float: bottom;
+
+    width: 400px;
+    top: 715px;
 }
 
+#page {
+    position: relative;
+
+    top: 8px;
+
+    color: white;
+    font-size: 10px;
+}
+
+#demo {
+    color: white;
+    font-size: 10px;
+}
+/*continuing the content CSS*/
 .content-area3 {
     position: relative;
     float: right;
