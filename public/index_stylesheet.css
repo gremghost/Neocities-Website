@@ -98,15 +98,20 @@ html {
 .grem-button {
     position: relative;
 
-    width: 100px;
-    height: 85px;
     top: 620px;
+}
+
+#button-grem {
+    position: relative;
+
+    width: 88px;
+    height: 31px;
+
+    border: 2px solid rgb(35, 120, 189);
 }
 
 #grem-button {
     position: relative;
-
-    border: 2px solid rgb(24, 124, 170);
 }
 
 #descriptor {
@@ -114,10 +119,11 @@ html {
 
     top: 10px;
 
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Jersey 25";
 
-    color: white;
+    color: rgb(255, 196, 0);
+    text-shadow: 1px 1px 2px black;
 }
 
 /* columns / center CSS */
