@@ -39,22 +39,25 @@
 
 #start-menu {
     position: relative;
+    display: block;
 
     width: 168px;
     height: 341px;
 
     right: 426px;
-    bottom: 419px;
+    bottom: 391px;
+
+    background-color: yellow;
 }
 
 #neocities {
     position: relative;
-    
+    display: block;
+    cursor: pointer;
+
     width: 125px;
     height: 28px;
 
-    top: 333px;
     left: 11px;
-
-    cursor: pointer;
+    bottom: 40px;
 }
