@@ -49,22 +49,13 @@ html {
     border: 2px solid white;
 }
 /* sub category for buttons*/
-#green {
+#temp {
     position: relative;
 
     top: 7px;
     margin-right: 4px;
 
-    border: 2px solid greenyellow;
-}
-
-#nin {
-    position: relative;
-
-    top: 7px;
-    margin-right: 4px;
-
-    border: 2px solid black;
+    border: 2px solid rgb(61, 0, 0);
 
 }
 
@@ -103,6 +94,32 @@ html {
     margin-right: 4px;
 
     border: 2px solid black;
+}
+
+/*sub sub category for my own button*/
+.grem-button {
+    position: relative;
+
+    width: 100px;
+    height: 85px;
+    top: 620px;
+}
+
+#grem-button {
+    position: relative;
+
+    border: 2px solid rgb(24, 124, 170);
+}
+
+#descriptor {
+    position: relative;
+
+    top: 10px;
+
+    font-size: 14px;
+    font-family: "Jersey 25";
+    
+    color: white;
 }
 
 /* columns / center CSS */
@@ -149,13 +166,14 @@ html {
     float: bottom;
 
     width: 400px;
-    top: 730px;
+    top: 635px;
 }
 
 #versiontext {
-  color: #BC00C2;
+  color: white;
   font-size: 12px;
-  text-shadow: 1px 1px 1px white;
+  font-family: "Jersey 25";
+  text-shadow: 1px 1px 1px black;
 }
 /*sub category for page modified information*/
 .page-modified {
@@ -163,7 +181,7 @@ html {
     float: bottom;
 
     width: 400px;
-    top: 715px;
+    top: 620px;
 }
 
 #page {
@@ -173,6 +191,7 @@ html {
 
     color: white;
     font-size: 10px;
+    font-family: "Jersey 25";
 }
 
 #demo {

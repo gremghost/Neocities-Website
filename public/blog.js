@@ -14,6 +14,7 @@ function startClick() {
 
     //need to add reset functionality upon second click
     //which then would restart the function allowing it to loop effectively
+    //also need functionality for if you click outside of it because that's also a thing in windows
 }
 
 function createWindowButton() {

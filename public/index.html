@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+    </style>
 </head>
 <link rel="stylesheet" href="index_stylesheet.css"> 
 <body background="backgrounds/purpskybg.jpg">
@@ -16,12 +19,12 @@
     <!--navigation section-->
     <center>
     <div class="nav_main">
-        <a href="greenday.html">
-            <img id="green" src="images/buttons/greenday2.png">
+        <a href="invalid.html">
+            <img id="temp" src="images/buttons/temporary.png">
         </a>
 
         <a href="invalid.html">
-            <img id="nin" src="images/buttons/nin.png">
+            <img id="temp" src="images/buttons/temporary.png">
         </a>
 
         <a href="eric_homepage.html">
@@ -97,14 +100,20 @@
 
     <!--center of site-->
         <div class="content-area2">
+            <div class="grem-button">
+                <p id="descriptor">Feel free to add this to your site !!</p>
+                <img id="grem-button" src="images/buttons/gremghost.png">
+            </div>
+
             <div class="versiontext">
-                <p id="versiontext">v0.4b - gremghost [2020-2026]</p>
+                <p id="versiontext">v0.4c - gremghost [2020-2026]</p>
             </div>
 
             <div class="page-modified">
                 <p id="page">Page last modified:</p>
                 <p id="demo"></p>
             </div>
+
             <script>
                 const date = new Date(document.lastModified);
                 document.getElementById("demo").innerHTML = date;
