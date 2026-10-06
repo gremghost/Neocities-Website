@@ -56,7 +56,6 @@ html {
     margin-right: 4px;
 
     border: 2px solid rgb(61, 0, 0);
-
 }
 
 #eric {
@@ -66,7 +65,6 @@ html {
     margin-right: 4px;   
 
     border: 2px solid white;
-
 }
 
 #fish {
@@ -215,6 +213,6 @@ html {
     position: relative;
 
     font-size: 14px;
-    font-family: 'Jersey 25';
+    font-family: "Jersey 25";
     color: white;
 }
