@@ -118,7 +118,7 @@ html {
 
     font-size: 14px;
     font-family: "Jersey 25";
-    
+
     color: white;
 }
 
@@ -209,4 +209,12 @@ html {
 
     background-image: url("backgrounds/bluebrick.jpg");
     border: 2px solid white;
+}
+
+#title {
+    position: relative;
+
+    font-size: 14px;
+    font-family: 'Jersey 25';
+    color: white;
 }
