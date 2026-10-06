@@ -1,81 +1,60 @@
-/*all css for blog_home.html*/
-
-a {
-    text-decoration: none;
+.html {
+    width: 1024px;
+    height: 768px;
 }
 
-#back {
-    position: absolute;
-    top: 80vh;
-    left: 46vw;
+.main-window {
+    position: relative;
+
+    width: 1024px;
+    height: 768px;
+    top: 80px;
+
+    background-color: #008080;
 }
 
-/*header css*/
-#header {
-    font-family: 'Chicle';
-    color: red;
-    font-size: 80px;
-    text-shadow: 4px 0cm 0cm black;
-    text-align: center;
+/*taskbar and associated stuff CSS*/
+.taskbar {
+    position: relative;
 
-    position: absolute;
-    left: 39vw;
+    width: 1024px;
+    height: 28px;
+
+    top: 740px;
+
+    cursor: default;
 }
 
-#subtitle {
-    font-family: 'Chicle';
-    color: white;
-    font-size: 40px;
-    text-shadow: 4px 0cm 0cm black;
+#start-button {
+    position: relative;
 
-    position: absolute;
-    left: 33.5vw;
-    top: 15vh;
+    width: 54px;
+    height: 22px;
+
+    bottom: 28px;
+    right: 483px;
+
+    cursor: pointer;
 }
 
-.introdiv {
-    position: absolute;
-    top: 40vh;
-    left: 35vw;
+#start-menu {
+    position: relative;
+
+    width: 168px;
+    height: 341px;
+
+    right: 426px;
+    bottom: 419px;
 }
 
-#msn {
-    position: absolute;
-    left: -3vw;
-    top: .7vh;
-}
+#neocities {
+    position: relative;
+    
+    width: 125px;
+    height: 28px;
 
-#website {
-    font-family: 'Chicle';
-    color: orangered;
-    font-size: 45px;
-    text-shadow: 4px 0cm 0cm black; 
+    top: 333px;
+    left: 11px;
 
-    margin-right: 9vw;
-}
-
-#notepad {
-    position: absolute;
-    left: 16vw;
-    top: 1vh;
-}
-
-#personal {
-    font-family: 'Chicle';
-    color: orangered;
-    font-size: 45px;
-    text-shadow: 4px 0cm 0cm black;
-}
-
-/*personal_blog.html css*/
-
-.entry1 {
-    width: 300px;
-    border: 5px solid white;
-    padding: 20px;
-}
-
-#entry1 {
-    font-size: 20px;
-    color: white;
+    cursor: pointer;
 }
