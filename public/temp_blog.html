@@ -101,6 +101,31 @@
         it seems. idfk. 
     </p>
     <br>
+    <br>
+    <h2><u>10/7/26</u></h2>
+    <p>new day new me. hopefully we get things working fr this time !!!!<br>
+    <br>
+    yesterday i did at least manage to get a working click detection / the ability for it to store itself into a variable, which<br>
+    is something. the starting goal is to get the info stored to be more specific than like "[object HTMLImageElement]" or<br>
+    "[object HTMLDivElement]". not that that can't be useful but the issue is it can't distinguish between elements in the<br>
+    way that would be needed. which totally can be fixed.<br>
+    <br>
+    okay progress!!!! it now returns the element's id which is far more useful than just spitting out that nonsense. at least<br>
+    for this use case. next step is to make the code that then checks "is the element that's been stored by the event listener<br>
+    the same element as what called X function?" and yknow do the proper steps for if yes or if no. i'm hoping to not use<br>
+    "onclick=" because i need the event listener to run first, not second. that was a big fucking issue i kept running into<br>
+    yesterday which automatically resulted in the check defaulting to no because the variable storing the info from the<br>
+    event listener only got filled in <b>AFTER</b> the check ran once. not good. but we'll hopefully be able to fix it.<br>
+    <br>
+    okay we are one step closer!!!!!!!!!!!!!!!!!!!!!!!!!!!<br>
+    <br>
+    the code can now roughly tell if its inside or outside of an element which is EPIC. what i need to do now is like.<br>
+    do specific things based on which element it's inside or outside of. that, i guess, is the next goal. like for instance<br>
+    the start button on the blog is supposed to show a different clicked image upon being clicked and also show the<br>
+    start menu. this when clicked out of should get rid of the start menu and reset it back to the non-clicked state.<br>
+    same for the start menu since they're connected at the hip based on how windows actually would handle it.<br>
+    i have no idea if this code will work for active / inactive states but we'll get there when we get there. yknow?
+    </p>
     <a href="index.html"><img src="gifs/7SHPPPTLB4ETSNOPOSBI3SF2F3AV2QFZ.gif" width="100"></a>
 </body>
 </html>

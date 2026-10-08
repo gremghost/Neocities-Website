@@ -25,7 +25,7 @@
     cursor: default;
 }
 
-#start-button {
+.start-button {
     position: relative;
 
     width: 54px;
@@ -37,9 +37,9 @@
     cursor: pointer;
 }
 
-#start-menu {
+.start-menu {
     position: relative;
-    display: block;
+    display: none;
 
     width: 168px;
     height: 341px;
