@@ -1,0 +1,62 @@
+body {
+    height: 940px;
+}
+
+.temporary {
+    position: relative;
+
+    width: 600px;
+    height: 300px;
+
+    left: 460px;
+    bottom: 1200px;
+}
+
+.temporary-pt-2 {
+    position: relative;
+
+    width: 300px;
+
+    left: 810px;
+    bottom: 800px;
+}
+
+#temporary {
+    width: 1000px;
+}
+
+#audio {
+    position: relative;
+    left: 350px;
+}
+
+.gifs1 {
+    position: relative;
+    height: 930px;
+    width: 300px;
+
+    z-index: 0;
+}
+
+.gifs2 {
+    position: relative;
+
+    left: 1590px;
+    bottom: 1535px;
+    height: 930px;
+    width: 300px;
+
+    z-index: 0;
+}
+
+
+#acid {
+    position: relative;
+    top: 0px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#squish {
+    width: 300px;
+}
