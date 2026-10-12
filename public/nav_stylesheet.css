@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "BD-Geminis";
+    src: url('fonts/BD-Geminis.woff') format('woff');
+    src: url('fonts/BD-Geminis.woff2') format('woff2');
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    right: 10px;
+
+    padding-bottom: 300px;
+}
+
+/*icons and text*/
+
+.eric {
+    position: relative;
+    
+    top: 70px;
+    left: 100px;
+
+    width: 300px;
+    height: 96px;
+
+}
+
+.img-hover:hover {
+    transform-origin: 50% 50%;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.music {
+    position: relative;
+
+    top: 100px;
+    left: 250px;
+
+    width: 300px;
+    height: 80px;
+
+}
+
+.blog {
+    position: relative;
+
+    top: 130px;
+    left: 100px;
+
+    width: 300px;
+    height: 96px;
+
+}
+
+.stupid {
+    position: relative;
+
+    top: 160px;
+    left: 200px;
+
+    width: 350px;
+    height: 96px;
+
+}
+
+.chcharts {
+    position: relative;
+
+    top: 195px;
+    left: 100px;
+
+    width: 400px;
+    height: 96px;
+
+}
+
+.aboutme {
+    position: relative;
+
+    top: 230px;
+    left: 150px;
+
+    width: 400px;
+    height: 96px;
+
+}
+
+.resources {
+    position: relative;
+
+    top: 260px;
+    left: 100px;
+
+    width: 400px;
+    height: 96px;
+
+}

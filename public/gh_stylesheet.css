@@ -5,3 +5,212 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%
 }
+
+@font-face {
+    font-family: 'GH3_MainMenu';
+    src: url('fonts/Novus-Bold-Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+.menu-text {
+    position: relative;
+
+    width: 400px;
+    height: 400px;
+
+    top: 150px;
+    left: 950px;
+
+
+}
+
+#selection {
+    position: relative;
+
+
+    z-index: -1;
+
+    background-color: #FCFDD1;
+}
+
+/*menu text classes and ids*/
+
+#charts {
+    position: relative;
+
+    left: 80px;
+
+    width: 225px;
+    height: 58px;
+
+    border-image: url("images/gh3/control-ui/SELECTION.png") 30 stretch;
+}
+
+#chart-text {
+    position: relative;
+
+    bottom: 15px;
+
+    font-family: 'GH3_MainMenu';
+    font-size: 60px;
+    text-shadow: 4px 4px 0px black;
+
+    color: #C89560;
+}
+
+#videos {
+    position: relative;
+
+    left: 100px;
+    top: -30px;
+
+    width: 163px;
+    height: 45px;
+}
+
+#video-text {
+    position: relative;
+
+    bottom: 11px;
+
+    font-family: 'GH3_MainMenu';
+    font-size: 45px;
+    text-shadow: 3.5px 3.5px 0px black;
+
+    color: #C89560;
+}
+
+#downloads {
+    position: relative;
+
+    left: 72px;
+    top: -50px;
+
+    width: 230px;
+    height: 38px;
+}
+
+#download-text {
+    position: relative;
+
+    bottom: 9px;
+
+    font-family: 'GH3_MainMenu';
+    font-size: 37px;
+    text-shadow: 3.5px 3.5px 0px black;
+
+    color: #C89560;
+}
+
+#links {
+    position: relative;
+
+    left: 100px;
+    top: -90px;
+
+    width: 183px;
+    height: 58px;
+}
+
+#link-text {
+    position: relative;
+
+    bottom: 15px;
+
+    font-family: 'GH3_MainMenu';
+    font-size: 60px;
+    text-shadow: 4px 4px 0px black;
+
+    color: #C89560;
+}
+
+#exit {
+    position: relative;
+
+    left: 80px;
+    top: -80px;
+
+    width: 109px;
+    height: 43px;
+}
+
+#exit-text {
+    position: relative;
+
+    bottom: 12px;
+    font-family: 'GH3_MainMenu';
+    font-size: 45px;
+    text-shadow: 4px 4px 0px black;
+
+    color: #C89560;
+}
+
+/*ui css*/
+
+.control-ui {
+    position: relative;
+
+    top: 380px;
+    left: 734px;
+
+    width: 434px;
+    height: 50px;
+    
+}
+
+#select-pill {
+    position: relative;
+    bottom: 100px;
+    width: 200px;
+}
+
+#green-fret {
+    position: relative;
+    width: 18px;
+
+    top: 111px;
+    left: 50px;
+}
+
+#select {
+    position: relative;
+
+    top: 60px;
+    left: 80px;
+
+    font-family: 'GH3_MainMenu';
+    font-size: 20px;
+}
+
+#pill {
+    width: 200px;
+    margin-right: 30px;
+}
+
+#strum-pill {
+    position: relative;
+
+    left: 232px;
+    bottom: 252px;
+    width: 200px;
+}
+
+#strum-bar {
+    position: relative;
+    width: 50px;
+
+    top: 111px;
+    left: 23px;
+}
+
+#strum {
+    position: relative;
+
+    top: 60px;
+    left: 77px;
+
+    font-family: 'GH3_MainMenu';
+    font-size: 20px;
+}

@@ -2,6 +2,13 @@ body {
     height: 940px;
 }
 
+.master {
+    position: relative;
+    
+    height: 900px;
+    right: 50px;
+}
+
 .temporary {
     position: relative;
 
@@ -32,6 +39,7 @@ body {
 
 .gifs1 {
     position: relative;
+    left: 400px;
     height: 930px;
     width: 300px;
 
@@ -41,7 +49,7 @@ body {
 .gifs2 {
     position: relative;
 
-    left: 1590px;
+    left: 1300px;
     bottom: 1535px;
     height: 930px;
     width: 300px;

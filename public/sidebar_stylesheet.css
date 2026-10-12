@@ -1,0 +1,110 @@
+a {
+    text-decoration: none;
+}
+
+/*update.html stylesheet*/
+
+@font-face {
+    font-family: "Modern DOS 8x16";
+    src: url('fonts/MOBY-REG.woff') format('woff');
+    src: url('fonts/MOBY-REG.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Billo";
+    src: url('fonts/BILLO___.woff') format('woff');
+    src: url('fonts/BILLO___.woff2') format('woff2');
+}
+
+.content {
+    position: relative;
+    width: 290px;
+    height: 395px;
+
+    bottom: 20px;
+    left: -10px;
+
+    padding-bottom: 200px;
+}
+
+#date {
+    font-family: "Modern DOS 8x16";
+    font-size: 10px;
+    text-shadow: 1px 1px 1px black;
+
+    color: #2DEC68;
+    margin: 3px;
+}
+
+#commit {
+    font-family: "Modern DOS 8x16";
+    font-size: 10px;
+    text-shadow: 1px 1px 1px black;
+
+    color: white;
+    margin: 3px;
+}
+
+/*version.html stylesheet*/
+
+.grem-button {
+    position: relative;
+
+    top: 85px;
+    left: 70px;
+}
+
+#descriptor {
+    position: relative;
+
+    font-family: "Nabla";
+    font-size: 17px;
+    color: white;
+}
+
+#button-grem {
+    position: relative;
+
+    width: 132px;
+    height: 46.5px;
+
+    border: 2px solid rgb(165, 27, 192);
+    box-shadow: 4px 4px 0px black;
+}
+
+#grem-button {
+    position: relative;
+    bottom: -70px;
+    right: 140px;
+
+    width: 132px;
+    height: 46.5px;
+
+    box-shadow: 6px 6px 0px black;
+}
+
+/*guestbook.html stylesheet*/
+
+.guestbook {
+    position: relative;
+    top: -28px;
+}
+
+#guestbook {
+    position: relative;
+    font-family: "Billo";
+    font-size: 28px;
+
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    margin: 1px;
+
+    left: 78px;
+}
+
+#book {
+    position: relative;
+    width: 60px;
+    top: 70px;
+    left: 10px;
+}

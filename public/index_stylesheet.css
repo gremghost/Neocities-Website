@@ -2,6 +2,12 @@ html {
     height: 934px;
 }
 
+.main {
+    position: relative;
+    width: 900px;
+    height: 757px;
+}
+
 /* header CSS */
 
 .header {
@@ -36,189 +42,104 @@ html {
     }
 }
 
-/* navigation CSS */
+.overlay {
+    position: relative;
+    pointer-events: none;
 
-.nav_main {
+    top: 40px;
+
+    max-width: 900px;
+    height: 757px;
+}
+
+#overlay {
     position: relative;
 
-    width: 796px;
-    height: 50px;
-    top: 0.3vh;
+    width: 900px;
 
-    background-image: url("backgrounds/b7.gif");
-    border: 2px solid white;
+    z-index: 2;
 }
-/* sub category for buttons*/
-#temp {
+
+.nav_sect::-webkit-scrollbar {
+    display: none;
+}
+
+.nav_sect {
     position: relative;
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
-    top: 7px;
-    margin-right: 4px;
+    clip-path: polygon(50% 5%, 64% 6%, 81% 6%, 92% 8%, 97% 14%, 98% 23%, 96% 33%, 93% 43%, 93% 48%, 94% 56%, 94% 66%, 94% 74%, 90% 87%, 80% 91%, 70% 91%, 63% 93%, 57% 94%, 43% 97%, 26% 99%, 15% 97%, 6% 92%, 3% 77%, 5% 67%, 6% 33%, 6% 25%, 7% 20%, 10% 14%, 19% 7%, 40% 4%);
+    top: -720px;
+    left: -142px;
 
-    border: 2px solid rgb(61, 0, 0);
+    max-width: 630px;
+    height: 767px;
+
+    background-color: black;
 }
 
-#eric {
+.unknown_sect::-webkit-scrollbar {
+    display: none;
+}
+
+.unknown_sect {
     position: relative;
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
-    top: 7px;
-    margin-right: 4px;   
+    clip-path: polygon(7% 0%, 95% 0%, 100% 5%, 100% 75%, 95% 85%, 6% 84%, 0% 76%, 0% 5%);
 
-    border: 2px solid white;
+    top: -1470px;
+    left: 310px;
+
+    max-width: 255px;
+    height: 180px;
+
+    background-color: yellow;
 }
 
-#stupid {
+/* Hide scrollbar for Chrome, Safari and Opera */
+.update_sect::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.update_sect {
     position: relative;
+    overflow: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 
-    top: 7px;
-    margin-right: 4px;
-    
-    border: 2px solid black;
+    clip-path: circle(40%);
+    top: -1502px;
+    left: 300px;
+
+    max-width: 290px;
+    height: 395px;
+
+    background-color: black;
 }
 
-#aboutme {
+/* Hide scrollbar for Chrome, Safari and Opera */
+.button_sect::-webkit-scrollbar {
+    display: none;
+}
+
+.button_sect {
     position: relative;
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
-    top: 7px;
-    margin-right: 4px;
+    clip-path: polygon(7% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 6% 100%, 0% 95%, 0% 5%);
+    top: -1528px;
+    left: 310px;
 
-    border: 2px solid yellow;
-}
+    max-width: 255px;
+    height: 210px;
 
-#blog {
-    position: relative;
-
-    top: 7px;
-    margin-right: 4px;
-
-    border: 2px solid black;
-}
-
-/*sub sub category for my own button*/
-.grem-button {
-    position: relative;
-
-    top: 620px;
-}
-
-#button-grem {
-    position: relative;
-
-    width: 88px;
-    height: 31px;
-
-    border: 2px solid rgb(35, 120, 189);
-}
-
-#grem-button {
-    position: relative;
-}
-
-#descriptor {
-    position: relative;
-
-    top: 10px;
-
-    font-size: 16px;
-    font-family: "Jersey 25";
-
-    color: rgb(255, 196, 0);
-    text-shadow: 1px 1px 2px black;
-}
-
-/* columns / center CSS */
-
-.content {
-    position: relative;
-
-    width: 800px;
-    height: 800px;
-    top: 6px;
-}
-
-.content-area1 {
-    position: relative;
-    float: left;
-
-    width: 196px;
-    height: 796px;
-
-    background-image: url("backgrounds/tumblr_ce6a9f6b614a823bf3bedce5537ef1dc_20e3e7ab_1280.png");
-    border: 2px solid white;
-}
-
-#buttons-galore {
-    position: relative;
-
-    top: 15px;
-}
-
-.content-area2 {
-    position: relative;
-    float: center;
-
-    width: 400px;
-    height: 796px;
-
-    background-image: url("backgrounds/purpleweb.gif");
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-}
-/*sub category for version text*/
-.versiontext {
-    position: relative;
-    float: bottom;
-
-    width: 400px;
-    top: 635px;
-}
-
-#versiontext {
-  color: white;
-  font-size: 12px;
-  font-family: "Jersey 25";
-  text-shadow: 1px 1px 1px black;
-}
-/*sub category for page modified information*/
-.page-modified {
-    position: relative;
-    float: bottom;
-
-    width: 400px;
-    top: 620px;
-}
-
-#page {
-    position: relative;
-
-    top: 8px;
-
-    color: white;
-    font-size: 10px;
-    font-family: "Jersey 25";
-}
-
-#demo {
-    color: white;
-    font-size: 10px;
-}
-/*continuing the content CSS*/
-.content-area3 {
-    position: relative;
-    float: right;
-
-    width: 196px;
-    height: 796px;
-    bottom: 800px;
-
-    background-image: url("backgrounds/bluebrick.jpg");
-    border: 2px solid white;
-}
-
-#title {
-    position: relative;
-
-    font-size: 14px;
-    font-family: "Jersey 25";
-    color: white;
+    background-color: black;
 }
