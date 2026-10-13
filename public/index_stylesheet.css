@@ -65,14 +65,14 @@ html {
 }
 
 .nav_sect {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
 
     clip-path: polygon(50% 5%, 64% 6%, 81% 6%, 92% 8%, 97% 14%, 98% 23%, 96% 33%, 93% 43%, 93% 48%, 94% 56%, 94% 66%, 94% 74%, 90% 87%, 80% 91%, 70% 91%, 63% 93%, 57% 94%, 43% 97%, 26% 99%, 15% 97%, 6% 92%, 3% 77%, 5% 67%, 6% 33%, 6% 25%, 7% 20%, 10% 14%, 19% 7%, 40% 4%);
-    top: -720px;
-    left: -142px;
+    top: 140px;
+    left: -5px;
 
     max-width: 630px;
     height: 767px;
@@ -85,15 +85,15 @@ html {
 }
 
 .unknown_sect {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
 
     clip-path: polygon(7% 0%, 95% 0%, 100% 5%, 100% 75%, 95% 85%, 6% 84%, 0% 76%, 0% 5%);
 
-    top: -1470px;
-    left: 310px;
+    top: 152px;
+    left: 630px;
 
     max-width: 255px;
     height: 180px;
@@ -108,14 +108,14 @@ html {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .update_sect {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 
     clip-path: circle(40%);
-    top: -1502px;
-    left: 300px;
+    top: 300px;
+    left: 600px;
 
     max-width: 290px;
     height: 395px;
@@ -129,14 +129,14 @@ html {
 }
 
 .button_sect {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
 
     clip-path: polygon(7% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 6% 100%, 0% 95%, 0% 5%);
-    top: -1528px;
-    left: 310px;
+    top: 670px;
+    left: 635px;
 
     max-width: 255px;
     height: 210px;
