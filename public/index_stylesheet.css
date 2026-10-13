@@ -1,3 +1,40 @@
+@font-face {
+    font-family: "Granix-Demo";
+    src: url('fonts/Granix-Demo.woff') format('woff');
+    src: url('fonts/Granix-Demo.woff2') format('woff2');
+}
+
+/*index.html css*/
+.text-content {
+    position: relative;
+    
+    width: 800px;
+    height: 600px;
+
+    padding-top: 20px;
+}
+
+#photosensitivity {
+    font-family: 'Granix-Demo';
+    font-size: 25px;
+    color: white;
+}
+
+#autoplay {
+    font-family: "Honk";
+    font-size: 35px;
+}
+
+#yes-button {
+    margin-right: 50px;
+}
+
+.img-hover:hover {
+    transform-origin: 50% 50%;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/*homepage.html css*/
 html {
     height: 934px;
 }
@@ -71,7 +108,7 @@ html {
     scrollbar-width: none;
 
     clip-path: polygon(50% 5%, 64% 6%, 81% 6%, 92% 8%, 97% 14%, 98% 23%, 96% 33%, 93% 43%, 93% 48%, 94% 56%, 94% 66%, 94% 74%, 90% 87%, 80% 91%, 70% 91%, 63% 93%, 57% 94%, 43% 97%, 26% 99%, 15% 97%, 6% 92%, 3% 77%, 5% 67%, 6% 33%, 6% 25%, 7% 20%, 10% 14%, 19% 7%, 40% 4%);
-    top: 140px;
+    top: 135px;
     left: -5px;
 
     max-width: 630px;

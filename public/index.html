@@ -2,33 +2,34 @@
 <html>
 <head>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Honk:MORF@15&display=swap');
     </style>
+    <link rel="stylesheet" href="index_stylesheet.css">
 </head>
 <body style="background-color: black;">
     <center>
-    <p style="position: relative; top: 175px; font-family: 'Jersey 25'; font-size: 20px; color: white;">
-        Hi there!<br>
+    <div class="text-content">
+        <p id="photosensitivity">
+            Photosensitivity warning as the following site uses flashing lights and colors on certain pages.<br>
+            <br>
+            For those who suffer from epilepsy or epileptic symptoms from certain patterns of flashing lights or colors,
+            please be careful and if you start to experience symptoms or seizures, close out of the site.<br>
+            <br>
+            These effects are used sparingly but can still be a problem. Thank you.
+        </p>
         <br>
-        The site is still loading, so please give it a second. (Not really but this screen is really important, so let's pretend!)<br>
         <br>
-        While we're waiting, I want to issue a flashing colors / images warning for anyone who may be sensitive to it and<br>
-        very much so for anyone who suffers from epilepsy. I don't try to go crazy with those kinds of effects for that<br>
-        exact reason but there are use cases where I do some amount of flashing. I very very very much do not want to<br>
-        cause problems for anyone. For right now, this is the only prevention method in place. Eventually I hope to add<br>
-        a sort of photosensitivity mode for my site that blocks out those kinds of things.<br>
         <br>
-        Being completely honest, I don't know how to do that currently. But I will learn and it'll exist soon. /srs<br>
-        <br>
-        I want everyone to be able to enjoy the silliness of my site but I don't want to cause any harm to anyone.<br>
-        So please be safe and I do hope you're able to enjoy the stupidness of this page!!<br>
-        <br>
-        Looks like the site has finished loading! Have fun and again, for sure be safe.<br>
-        <br>
-        - gremghost
-    </p>
-    <br>
-    <a style="position: relative; top: 175px;" href="homepage.html"><img src="gifs/3GT3Q7ULHQ74FSZEOGEFXYRUTJ2WE5PX.gif"></a>
-    </center> 
+        <p id="autoplay" class="floating">
+            For the optimial experience, autoplay is enabled on certain pages. For those who do not care for it, YES keeps it enabled and NO disables it.
+        </p>
+    </div>
+    
+    <div class="image-selection">
+        <a href="homepage.html"><img class="img-hover" id="yes-button" src="images/yes.png"></a>
+        <a href="homepage.html"><img class="img-hover" id="no-button" src="images/no.png"></a>
+    </div>
+    </center>
+    <script src="preferences.js"></script>
 </body>
 </html>
