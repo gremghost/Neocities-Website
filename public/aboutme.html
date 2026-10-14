@@ -4,6 +4,23 @@
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
-    <div></div>
+    <div class="main-content">
+        <div class="tv">
+            <iframe
+            id="tvFrame"
+            width="800";
+            height="600";
+            src="";
+            frameBorder="0";
+            scrolling="no";></iframe>
+        </div>
+        <div class="buttons">
+            <div id="power-button" onclick="power()"></div>
+            <div id="channel-up" onclick="changeSrcUp()"></div>
+            <div id="channel-down" onclick="changeSrcDown()"></div>
+        </div>
+    </div>
+
+    <script src="about.js"></script>
 </body>
 </html>

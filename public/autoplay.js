@@ -1,6 +1,6 @@
 const audioElements = document.querySelectorAll("audio[autoplay]");
 
-if (!localStorage["data-autoplay"]) {
+if (localStorage["data-autoplay"] === "false") {
     //grab all autoplaying audio elements
     for (const elem of audioElements) {
         //disable autoplay

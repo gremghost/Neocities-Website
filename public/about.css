@@ -1,0 +1,51 @@
+/*tv css*/
+.tv {
+    position: absolute;
+
+    left: 550px;
+    top: 100px;
+
+    width: 800px;
+    height: 600px;
+
+    background-color: grey;
+}
+
+#power-button {
+    position: absolute;
+    cursor: pointer;
+
+    left: 550px;
+    top: 750px;
+
+    width: 250px;
+    height: 100px;
+
+    background-color: orange;
+}
+
+#channel-down {
+    position: absolute;
+    cursor: pointer;
+
+    left: 825px;
+    top: 750px;
+    
+    width: 250px;
+    height: 100px;
+
+    background-color: red;
+}
+
+#channel-up {
+    position: absolute;
+    cursor: pointer;
+
+    left: 1100px;
+    top: 750px;
+
+    width: 250px;
+    height: 100px;
+
+    background-color: lime;
+}
