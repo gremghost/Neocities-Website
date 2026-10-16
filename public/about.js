@@ -13,7 +13,7 @@ function changeSrcUp() {
 
 function power() {
     if (powerOn === 0) {
-        currentChannel = -1;
+        currentChannel = 0;
         document.getElementById("tvFrame").src = "static.html";
         powerOn = 1;
         return
@@ -28,9 +28,15 @@ function power() {
 
 function changeSrcDown() {
     if (powerOn === 1) {
-        console.log(currentChannel);
-        currentChannel = (currentChannel - 1) % srcArray.length;
-        document.getElementById("tvFrame").src = srcArray[currentChannel]; //push to iframe
+        if (currentChannel == 0) {
+            console.log(currentChannel);
+            currentChannel = srcArray.length - 1;
+            document.getElementById("tvFrame").src = srcArray[currentChannel]; //push to iframe
+        } else {
+            console.log(currentChannel);
+            currentChannel = currentChannel - 1;
+            document.getElementById("tvFrame").src = srcArray[currentChannel]; //push to iframe
+        }
     }
 }
 
