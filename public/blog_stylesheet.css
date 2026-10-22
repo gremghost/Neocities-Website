@@ -1,9 +1,23 @@
+@font-face {
+    font-family: 'MS Sans Serif';
+    src: url('fonts/ms-sans-serif-1.woff') format('woff');
+    src: url('fonts/ms-sans-serif-1.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'MS Sans Serif';
+    src: url('fonts/ms-sans-serif-bold.woff') format('woff');
+    src: url('fonts/ms-sans-serif-bold.woff2') format('woff2');
+    font-weight: bold;
+}
+
+
 .html {
     width: 1024px;
     height: 768px;
 }
 
-.main-window {
+#main-window {
     position: relative;
 
     width: 1024px;
@@ -14,8 +28,8 @@
 }
 
 /*taskbar and associated stuff CSS*/
-.taskbar {
-    position: relative;
+#taskbar {
+    position: absolute;
 
     width: 1024px;
     height: 28px;
@@ -23,41 +37,208 @@
     top: 740px;
 
     cursor: default;
+
+
+    background-color: grey;
 }
 
-.start-button {
-    position: relative;
+
+
+#bar-buttons {
+    position: inherit;
+
+    top: 4px;
+    left: 176px;
+
+    width: 727px;
+    height: 22px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    gap: 8px;
+
+    background-color: darkgray;
+}
+
+#start-button {
+    position: absolute;
 
     width: 54px;
     height: 22px;
 
-    bottom: 28px;
-    right: 483px;
+    bottom: 2px;
+    left: 2px;
 
+    z-index: 1;
     cursor: pointer;
+    background-color: lightgray;
 }
 
 .start-menu {
-    position: relative;
-    display: none;
+    position: absolute;
 
     width: 168px;
     height: 341px;
 
-    right: 426px;
-    bottom: 391px;
+    left: 2px;
+    bottom: 24px;
+
+    z-index: 2;
+}
+
+/*desktop icons*/
+
+.desktop {
+    position: absolute;
+
+    display: grid; 
+    grid-template-columns: 1.4fr 1.3fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-auto-flow: column;
+    width: 427px; 
+    height: 525px; 
+}
+
+.desktop-icon {
+    position: relative;
+
+    margin-left: 7px;
+    margin-top: 2px;
+
+    width: 61px;
+    height: 49px;
+
+    background-color: violet;
+}
+
+/*windows*/
+
+.window {
+    position: absolute;
+    overflow: auto;
+
+    display: none;
+
+    resize: both;
+    
+    width: 600px;
+    height: 300px;
+}
+
+#folwin {
+    position: absolute;
+
+    top: 0px;
+
+    background-color: #C0C0C0;
+}
+
+#win1 {
+    position: absolute;
+
+    top: 400px;
+
+    background-color: #C0C0C0;
+}
+
+.title-bar {
+    position: inherit;
+
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 1px;
+
+    width: 591px;
+    height: 18px;
+
+    background-color: #000080;
+}
+
+.title {
+    cursor: default;
+    font-family: "MS Sans Serif";
+    font-size: 8pt;
+    
+    position: inherit;
+    top: 3px;
+    left: 21px;
+
+    color: white;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.icon {
+    position: inherit;
+
+    width: 15px;
+    height: 13px;
+
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-bottom: 3px;
+
+    top: 4px;
+    left: 4px;
 
     background-color: yellow;
 }
 
-#neocities {
-    position: relative;
-    display: block;
-    cursor: pointer;
+.minimize-button {
+    position: inherit;
 
-    width: 125px;
-    height: 28px;
+    width: 16px;
+    height: 14px;
 
-    left: 11px;
-    bottom: 40px;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+
+    top: 4px;
+    left: 543px;
+
+    background-color: red;
+}
+
+.maximize-button {
+    position: inherit;
+
+    width: 16px;
+    height: 14px;
+
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+
+    top: 4px;
+    left: 559px;
+
+    background-color: darkred;
+}
+
+.close-button {
+    position: inherit;
+    
+    width: 16px;
+    height: 14px;
+
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+
+    top: 4px;
+    left: 577px;
+
+    background-color: lime;
 }
