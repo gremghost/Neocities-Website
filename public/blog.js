@@ -1,9 +1,11 @@
-const desktopWidth = document.getElementById("main-window").clientWidth
-const desktopHeight = document.getElementById("main-window").clientHeight
+const desktopWidth = document.body.clientWidth
+const desktopHeight = document.body.clientHeight
 
 const taskbar = document.getElementById("bar-buttons");
 
 var taskbarButton = "";
+
+//--OBJECT DEFINITIONS--
 
 //--WINDOW FUNCTIONALITY--
 
@@ -147,8 +149,47 @@ function exist(elem) {
 }
 
 //maximizing a window
-function maximize() {
-    return;
+const maxButton = document.getElementsByClassName("maximize-button");
+
+var previousWidth;
+var previousHeight;
+
+var maxClicked = false;
+
+for (const elem of maxButton) {
+    elem.addEventListener("click", (event) => {
+        maximize(event.target)
+    })
+}
+
+function maximize(elem) {
+    console.log(elem);
+
+    const max = document.getElementById(elem.getAttribute("data-id"));
+    const titleBar = max.querySelector(".title-bar-anim");
+
+    if (maxClicked != true) {
+        //store previous width and height
+        previousWidth = max.style.width;
+        previousHeight = max.style.height;
+
+        //maximize window
+        titleBar.style.position = "fixed";
+        titleBar.style.display = "flex";
+        titleBar.classList.add("anim-grow");
+        //max.style.width = "1024px";
+        //max.style.height = "740px";
+        //max.style.top = "0px";
+        //max.style.left = "0px";
+
+        maxClicked = true;
+    } else {
+        titleBar.style.display = "none";
+        //max.style.width = previousWidth;
+        //max.style.height = previousHeight;
+        
+        maxClicked = false;
+    }
 }
 
 //closing a window

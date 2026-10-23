@@ -31,14 +31,13 @@
 #taskbar {
     position: absolute;
 
-    width: 1024px;
+    width: 100vw;
     height: 28px;
 
-    top: 740px;
+    left: 0px;
+    bottom: 0px;
 
     cursor: default;
-
-
     background-color: grey;
 }
 
@@ -108,7 +107,7 @@
     position: relative;
 
     margin-left: 7px;
-    margin-top: 2px;
+    margin-top: -8px;
 
     width: 61px;
     height: 49px;
@@ -126,8 +125,12 @@
 
     resize: both;
     
+    min-width: 112px;
     width: 600px;
+    max-width: 1024px;
+    min-height: 27px;
     height: 300px;
+    max-height: 740px;
 }
 
 #folwin {
@@ -147,17 +150,21 @@
 }
 
 .title-bar {
-    position: inherit;
+    display: flex;
+    flex-flow: row nowrap; /* display them horizontally */
+    align-items: center;
+    gap: 4px;
 
-    margin-top: 4px;
-    margin-left: 4px;
-    margin-right: 4px;
-    margin-bottom: 1px;
+    width: calc(100% - 16px);
+    margin: 2px auto;
+    padding: 4px;
 
-    width: 591px;
-    height: 18px;
-
+    height: 10px;
     background-color: #000080;
+}
+
+.title-bar .title {
+    margin-right: auto;
 }
 
 .title {
@@ -186,27 +193,88 @@
     height: 13px;
 
     margin-top: 2px;
-    margin-left: 2px;
+    margin-left: -2px;
     margin-bottom: 3px;
 
-    top: 4px;
-    left: 4px;
+    background-color: yellow;
+}
+
+/*title bar animations*/
+.title-bar-anim {
+    display: none;
+    flex-flow: row nowrap; /* display them horizontally */
+    align-items: center;
+    gap: 4px;
+
+    width: calc(100% - 16px);
+    margin: 2px auto;
+    padding: 4px;
+
+    height: 10px;
+    background-color: #000080;
+}
+
+.anim-grow {
+    animation: 1 scale 5s;
+}
+
+@keyframes scale {
+    from {
+        width: calc(100% - 16px);
+        height: 10px;
+    }
+    to {
+        width: 1024px;
+        height: 10px;
+    }
+}
+
+.title-bar-anim .title-anim {
+    margin-right: auto;
+}
+
+.title-anim {
+    cursor: default;
+    font-family: "MS Sans Serif";
+    font-size: 8pt;
+    
+    position: inherit;
+    top: 3px;
+    left: 21px;
+
+    color: white;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.icon-anim {
+    position: inherit;
+
+    width: 15px;
+    height: 13px;
+
+    margin-top: 2px;
+    margin-left: -2px;
+    margin-bottom: 3px;
 
     background-color: yellow;
 }
 
 .minimize-button {
     position: inherit;
+    justify-self: right;
 
     width: 16px;
     height: 14px;
 
     margin-top: 2px;
-    margin-right: 2px;
+    margin-right: -4px;
     margin-bottom: 2px;
-
-    top: 4px;
-    left: 543px;
 
     background-color: red;
 }
@@ -218,27 +286,22 @@
     height: 14px;
 
     margin-top: 2px;
-    margin-right: 2px;
+    margin-right: -2px;
     margin-bottom: 2px;
-
-    top: 4px;
-    left: 559px;
 
     background-color: darkred;
 }
 
 .close-button {
     position: inherit;
+    justify-self: right;
     
     width: 16px;
     height: 14px;
 
     margin-top: 2px;
-    margin-right: 2px;
+    margin-right: -2px;
     margin-bottom: 2px;
-
-    top: 4px;
-    left: 577px;
 
     background-color: lime;
 }

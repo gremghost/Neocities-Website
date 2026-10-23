@@ -4,9 +4,8 @@
     <title>Windows 98 SE</title>
     <link rel="stylesheet" href="blog_stylesheet.css">
 </head>
-<body style="background-color: black;">
+<body style="background-color: #008080;">
     <center>
-    <div id="main-window">
         <!--taskbar and taskbar buttons-->
         <div class="taskbar" id="taskbar">
             <div id="bar-buttons"></div>
@@ -24,33 +23,28 @@
         </div>
 
         <div class="window" id="folwin" data-id="min1" data-icon-id="test-icon" data-folder-id="blog">
-            <div class="title-bar" id="folwinheader">
-                <div class="title" id="foltitle"><b>Test Title</b></div>
+            <div class="title-bar-anim">
+                <div class="icon-anim"></div>
+                <div class="title-anim"><b>Test Title</b></div>
             </div>
-                <div class="icon" id="ico1" data-id="folwin">
-                </div>
-                <div class="minimize-button" id="min1" data-id="folwin">
-                </div>
-                <div class="maximize-button" id="max1" data-id="folwin">
-                </div>
-                <div class="close-button" id="close1" data-id="folwin">
-                </div>
+
+            <div class="title-bar" id="folwinheader">
+                <div class="icon" id="ico1" data-id="folwin"></div>
+                <div class="title" id="foltitle"><b>Test Title</b></div>
+                <div class="minimize-button" id="min1" data-id="folwin"></div>
+                <div class="maximize-button" id="max1" data-id="folwin"></div>
+                <div class="close-button" id="close1" data-id="folwin"></div>
+            </div>
         </div>
 
         <div class="window" id="win1" data-id="min2">
             <div class="title-bar" id="win1header">
+                <div class="icon" id="ico2" data-id="win"></div>
                 <div class="title" id="win1title"><b>Test Title</b></div>
-            </div>
-                <div class="icon" id="ico2" data-id="win">
-                </div>
-                <div class="minimize-button" id="min2" data-id="win1">
-                </div>
-                <div class="maximize-button" id="max2" data-id="win1">
-                </div>
-                <div class="close-button" id="close2" data-id="win1">
-                </div>
+                <div class="minimize-button" id="min2" data-id="win1"></div>
+                <div class="maximize-button" id="max2" data-id="win1"></div>
+                <div class="close-button" id="close2" data-id="win1"></div>
         </div>
-    </div>
     </center>
 
     <script src="blog.js"></script>
