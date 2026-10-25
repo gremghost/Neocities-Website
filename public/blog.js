@@ -1,5 +1,5 @@
-const desktopWidth = document.body.clientWidth
-const desktopHeight = document.body.clientHeight
+const desktopWidth = document.body.clientWidth;
+const desktopHeight = document.body.clientHeight;
 
 const taskbar = document.getElementById("bar-buttons");
 
