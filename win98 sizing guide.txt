@@ -1,0 +1,36 @@
+windows
+title bar: 4 pixels from the left, top, and right of window
+1 pixel from end of title bar section
+
+title bar section: 23 pixels high
+title bar: 18 pixels tall
+
+icon: 15 x 13
+2 px from top
+3 px from bottom
+2 px from left
+
+title bar text: 4px from icon
+4px from top
+4px from bottom
+
+min, max, and close buttons: 16 x 14
+buttons are 2 pixels from top, right, bottom of title bar
+
+
+taskbar
+start (no buttons allowed): 176 x 28
+
+taskbar buttons: 160 x 22
+buttons start 9 pixels after the end of start
+first one gets placed 176px from the start of the taskbar
+3 pixels apart from each other
+4 pixels from the top of the taskbar
+2 pixels from the bottom
+
+end (no buttons allowed): 121 x 28
+
+first window opens
+220 from top and left
+
+1184 x 749

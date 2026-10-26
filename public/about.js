@@ -1,7 +1,7 @@
 var powerOn = 0;
 var currentChannel = 0; //starting value for the array
 
-const srcArray = ["fish.html", "tempsec.html", "grog1.html", "IHATETHIS.html"]
+const srcArray = ["fish.html", "tempsec.html", "grog1.html", "socialslinks.html"]
 
 function changeSrcUp() {
     if (powerOn === 1) {

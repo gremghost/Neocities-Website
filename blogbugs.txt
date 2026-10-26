@@ -1,0 +1,9 @@
+bugs to squash
+- when maximizing, it needs to auto place
+window at top of screen (in win98 the title bar like centers itself while increasing width to reach corners of screen before the whole window catches up. not sure if possible)
+- it should not be able to be dragged when maximized
+
+- if window is minimized, reclicking on the icon effectively creates a new window and taskbar button which breaks the previous one
+(correct functionality should be reopening the existing window)
+- window positioning and how they open if never been opened before, have been opened before, if more than one window that has never been opened before is opened, etc
+- window cannot be dragged further than 1/3rd of the screen (??????)

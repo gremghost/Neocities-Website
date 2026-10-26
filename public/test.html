@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /*windows*/
+
+.window {
+    position: absolute;
+    overflow: auto;
+
+    display: block;
+
+    resize: both;
+    
+    min-width: 112px;
+    width: 600px;
+    max-width: 1024px;
+    min-height: 27px;
+    height: 300px;
+    max-height: 740px;
+}
+
+#folwin {
+    position: absolute;
+
+    top: 0px;
+
+    background-color: #C0C0C0;
+}
+
+#win1 {
+    position: absolute;
+
+    top: 400px;
+
+    background-color: #C0C0C0;
+}
+
+.title-bar {
+    display: flex;
+    flex-flow: row nowrap; /* display them horizontally */
+    align-items: center;
+    gap: 4px;
+
+    width: calc(100% - 16px);
+    margin: 2px auto;
+    padding: 4px;
+
+    height: 10px;
+    background-color: #000080;
+}
+
+.title-bar .title {
+    margin-right: auto;
+}
+
+.title {
+    cursor: default;
+    font-family: "MS Sans Serif";
+    font-size: 8pt;
+    
+    position: inherit;
+    top: 3px;
+    left: 21px;
+
+    color: white;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.icon {
+    position: inherit;
+
+    width: 15px;
+    height: 13px;
+
+    margin-top: 2px;
+    margin-left: -2px;
+    margin-bottom: 3px;
+
+    background-color: yellow;
+}
+
+.minimize-button {
+    position: inherit;
+    justify-self: right;
+
+    width: 16px;
+    height: 14px;
+
+    margin-top: 2px;
+    margin-right: -4px;
+    margin-bottom: 2px;
+
+    background-color: red;
+}
+
+.maximize-button {
+    position: inherit;
+
+    width: 16px;
+    height: 14px;
+
+    margin-top: 2px;
+    margin-right: -2px;
+    margin-bottom: 2px;
+
+    background-color: darkred;
+}
+
+.close-button {
+    position: inherit;
+    justify-self: right;
+    
+    width: 16px;
+    height: 14px;
+
+    margin-top: 2px;
+    margin-right: -2px;
+    margin-bottom: 2px;
+
+    background-color: lime;
+}
+</style>
+</head>
+<body>
+    <div class="window" id="folwin" data-id="min1" data-icon-id="test-icon" data-folder-id="blog">
+        <div class="title-bar" id="folwinheader">
+            <div class="icon" id="ico1" data-id="folwin"></div>
+            <div class="title" id="foltitle"><b>Test Title</b></div>
+            <div class="minimize-button" id="min1" data-id="folwin"></div>
+            <div class="maximize-button" id="max1" data-id="folwin"></div>
+            <div class="close-button" id="close1" data-id="folwin"></div>
+        </div>
+    </div>
+
+    <script src="blog.js"></script>
+</body>
+</html>

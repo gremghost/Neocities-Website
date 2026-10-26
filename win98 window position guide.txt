@@ -1,0 +1,10 @@
+win98 window positioning guide
+
+if a window has been opened before, it moves back to where it was. this is the easy shit
+
+if a window hasnt been opened before
+- if a window is already in the default spot
+	- it moves down 22 pixels 
+	and
+	- 24 pixels left from the window that was opened first
+

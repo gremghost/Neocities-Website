@@ -1,0 +1,21 @@
+a window in win98 can do the following
+
+- detect if active or inactive
+	- if active:
+	- makes title bar blue
+	- puts window on top of all other windows
+	- turns taskbar button to clicked state
+	
+	- if inactive:
+	- makes title bar gray
+	- puts window behind any active windows
+	- turns taskbar button to non-clicked state
+
+- can be dragged around the screen
+- can be resized to basically any size
+	- when closed, they reopen to whatever size they were last resized to
+
+
+func by icon:
+folders cannot be opened more than once while the existing window is still open
+regular applications can be opened as many times as possible
