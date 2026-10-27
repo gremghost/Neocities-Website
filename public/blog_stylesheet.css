@@ -206,7 +206,7 @@
 }
 
 .anim-grow {
-    animation: 1 scale .75s forwards;
+    animation: 1 scale .6s forwards;
 }
 
 @keyframes scale {
@@ -219,6 +219,23 @@
         width: 100%;
         top: 0;
         left: 0;
+    }
+}
+
+.anim-shrink {
+    animation: 1 shrink .6s forwards;
+}
+
+@keyframes shrink {
+    from {
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    to {
+        width: var(--win-width);
+        left: var(--win-left);
+        top: var(--win-top);
     }
 }
 

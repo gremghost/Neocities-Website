@@ -153,6 +153,8 @@ const maxButton = document.getElementsByClassName("maximize-button");
 
 var previousWidth;
 var previousHeight;
+var previousTop;
+var previousLeft;
 
 var maxClicked = false;
 
@@ -172,8 +174,10 @@ function maximize(elem) {
 
     if (maxClicked != true) {
         //store previous width and height
-        previousWidth = max.style.width;
-        previousHeight = max.style.height;
+        previousWidth = max.style.getPropertyValue("--win-width")
+        previousHeight = max.style.getPropertyValue("--win-height");
+        previousTop = max.style.getPropertyValue("--win-top")
+        previousLeft = max.style.getPropertyValue("--win-left")
 
         //maximize window
         titleBar.style.display = "flex";
@@ -181,17 +185,30 @@ function maximize(elem) {
         title.style.display = "flex";
         title.classList.add("anim-grow");
 
-        setTimeout(750, () => {
-            max.style.setProperty("--win-width", "100vw");
-            max.style.setProperty("--win-height", "1052px");
-        })
+        setTimeout(() => {
+            max.style.setProperty("--win-width", "100%");
+            max.style.setProperty("--win-height", "calc(100% - 28px)");
+            max.style.setProperty("--win-top", "0");
+            max.style.setProperty("--win-left", "0");
+            max.style.setProperty("resize", "none")
+            titleBar.style.display = "none";
+            title.style.display = "none";
+            titleBar.classList.remove("anim-grow");
+            title.classList.remove("anim-grow");
+        }, 600)
 
         maxClicked = true;
     } else {
-        titleBar.style.display = "none";
-        //max.style.width = previousWidth;
-        //max.style.height = previousHeight;
-        
+        titleBar.classList.add("anim-shrink");
+        title.classList.add("anim-shrink");
+
+        setTimeout(() => {
+            max.style.setProperty("--win-width", previousWidth);
+            max.style.setProperty("--win-height", previousHeight);
+            max.style.setProperty("--win-top", previousTop);
+            max.style.setProperty("--win-left", previousLeft);
+            max.style.setProperty("resize", "both")
+        }, 600)
         maxClicked = false;
     }
 }
