@@ -111,6 +111,10 @@
     display: none;
     resize: both;
 
+    --resize-width: 1148px;
+    --resize-top: 220px;
+    --resize-left: 220px;
+
     --win-width: 1148px;
     --win-height: 749px;
     --win-top: 220px;
@@ -223,7 +227,20 @@
 }
 
 .max-shrink {
-    animation: 1 scale .6s reverse forwards;
+    animation: 1 shrink .6s forwards;
+}
+
+@keyframes shrink {
+    from {
+        width: var(--win-width);
+        left: var(--win-left);
+        top: var(--win-top);
+    }
+    to {
+        width: var(--resize-width);
+        left: var(--resize-left);
+        top: var(--resize-top);
+    }
 }
 
 .title-bar-anim .title-anim {

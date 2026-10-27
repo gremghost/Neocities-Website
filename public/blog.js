@@ -104,6 +104,8 @@ function dragElement(elmnt) {
     // set the element's new position:
     elmnt.style.setProperty("--win-top", Math.max(0, Math.min(elmnt.offsetTop - pos2, desktopHeight - elmnt.clientHeight)) + "px");
     elmnt.style.setProperty("--win-left", Math.max(0, Math.min(elmnt.offsetLeft - pos1, desktopWidth - elmnt.clientWidth)) + "px");
+    elmnt.style.setProperty("--resize-top", Math.max(0, Math.min(elmnt.offsetTop - pos2, desktopHeight - elmnt.clientHeight)) + "px");
+    elmnt.style.setProperty("--resize-left", Math.max(0, Math.min(elmnt.offsetLeft - pos1, desktopWidth - elmnt.clientWidth)) + "px");
   }
 
   function closeDragElement() {
@@ -201,8 +203,8 @@ function maximize(elem) {
     } else {
         titleBar.style.display = "block";
         title.style.display = "block";
-        titleBar.classList.add("anim-shrink");
-        title.classList.add("anim-shrink");
+        titleBar.classList.add("max-shrink");
+        title.classList.add("max-shrink");
 
         setTimeout(() => {
             max.style.setProperty("--win-width", previousWidth);
@@ -214,7 +216,7 @@ function maximize(elem) {
             title.style.display = "none";
             titleBar.classList.remove("max-shrink");
             title.classList.remove("max-shrink");
-        }, 600)
+        }, 500)
         maxClicked = false;
     }
 }
