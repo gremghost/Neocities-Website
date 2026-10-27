@@ -3,7 +3,7 @@ const desktopHeight = document.body.clientHeight;
 
 const taskbar = document.getElementById("bar-buttons");
 
-var taskbarButton = "";
+var taskbarButton;
 
 //--OBJECT DEFINITIONS--
 
@@ -22,6 +22,7 @@ for (const elem of desktopIcon) {
 
 function openWin(elem) {
     const winOpen = document.getElementById(elem.getAttribute("data-win-id"));
+    console.log(winOpen)
     const folderType = document.getElementById(elem.getAttribute("data-folder-type"));
     //check for folders to determine which type and if it's open or not already
 
@@ -41,11 +42,11 @@ function openWin(elem) {
     taskbarButton.style.height = "22px";
     taskbarButton.style.marginLeft = "3px;"
     taskbarButton.style.backgroundColor = "yellow";
-    winOpen.style.setProperty("--taskbutton-top", taskbarButton.style.top)
-    winOpen.style.setProperty("--taskbutton-left", taskbarButton.style.left)
 
     //put it in html inside taskbar
     taskbar.appendChild(taskbarButton);
+    winOpen.style.setProperty("--taskbutton-top", taskbarButton.getBoundingClientRect().top)
+    winOpen.style.setProperty("--taskbutton-left", taskbarButton.getBoundingClientRect().left)
 
 }
 //--ACTIVE vs INACTIVE STATE
@@ -139,15 +140,15 @@ function minimize(elem) {
     //change style of element on html side to be display: none
     titleBar.style.display = "flex";
     title.style.display = "flex";
-    titleBar.classList.add("max-shrink");
-    title.classList.add("max-shrink");
+    titleBar.classList.add("min-shrink");
+    title.classList.add("min-shrink");
 
     setTimeout(() => {
         min.style.setProperty("display", "none")
         titleBar.style.display = "none";
         title.style.display = "none";
-        titleBar.classList.remove("max-shrink");
-        title.classList.remove("max-shrink");
+        titleBar.classList.remove("min-shrink");
+        title.classList.remove("min-shrink");
     }, 500)
 
     //for each one, go to exist and make it exist again once clicked
