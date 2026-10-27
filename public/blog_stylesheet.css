@@ -205,7 +205,7 @@
     background-color: #000080;
 }
 
-.anim-grow {
+.max-grow {
     animation: 1 scale .6s forwards;
 }
 
@@ -222,21 +222,8 @@
     }
 }
 
-.anim-shrink {
-    animation: 1 shrink .6s forwards;
-}
-
-@keyframes shrink {
-    from {
-        width: 100%;
-        left: 0;
-        top: 0;
-    }
-    to {
-        width: var(--win-width);
-        left: var(--win-left);
-        top: var(--win-top);
-    }
+.max-shrink {
+    animation: 1 scale .6s reverse forwards;
 }
 
 .title-bar-anim .title-anim {

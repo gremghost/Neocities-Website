@@ -181,9 +181,9 @@ function maximize(elem) {
 
         //maximize window
         titleBar.style.display = "flex";
-        titleBar.classList.add("anim-grow");
+        titleBar.classList.add("max-grow");
         title.style.display = "flex";
-        title.classList.add("anim-grow");
+        title.classList.add("max-grow");
 
         setTimeout(() => {
             max.style.setProperty("--win-width", "100%");
@@ -193,12 +193,14 @@ function maximize(elem) {
             max.style.setProperty("resize", "none")
             titleBar.style.display = "none";
             title.style.display = "none";
-            titleBar.classList.remove("anim-grow");
-            title.classList.remove("anim-grow");
-        }, 600)
+            titleBar.classList.remove("max-grow");
+            title.classList.remove("max-grow");
+        }, 500)
 
         maxClicked = true;
     } else {
+        titleBar.style.display = "block";
+        title.style.display = "block";
         titleBar.classList.add("anim-shrink");
         title.classList.add("anim-shrink");
 
@@ -208,6 +210,10 @@ function maximize(elem) {
             max.style.setProperty("--win-top", previousTop);
             max.style.setProperty("--win-left", previousLeft);
             max.style.setProperty("resize", "both")
+            titleBar.style.display = "none";
+            title.style.display = "none";
+            titleBar.classList.remove("max-shrink");
+            title.classList.remove("max-shrink");
         }, 600)
         maxClicked = false;
     }
