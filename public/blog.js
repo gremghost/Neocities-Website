@@ -102,8 +102,8 @@ function dragElement(elmnt) {
     pos3 = e.clientX;
     pos4 = e.clientY;
     // set the element's new position:
-    elmnt.style.setProperty("--win-top", Math.max(0, Math.min(elmnt.offsetTop - pos2, desktopHeight - elmnt.clientHeight))) + "px";
-    elmnt.style.setProperty("--win-left", Math.max(0, Math.min(elmnt.offsetLeft - pos1, desktopWidth - elmnt.clientWidth))) + "px";
+    elmnt.style.setProperty("--win-top", Math.max(0, Math.min(elmnt.offsetTop - pos2, desktopHeight - elmnt.clientHeight)) + "px");
+    elmnt.style.setProperty("--win-left", Math.max(0, Math.min(elmnt.offsetLeft - pos1, desktopWidth - elmnt.clientWidth)) + "px");
   }
 
   function closeDragElement() {
@@ -166,6 +166,7 @@ function maximize(elem) {
     console.log(elem);
 
     const max = document.getElementById(elem.getAttribute("data-id"));
+    console.log(max)
     const titleBar = max.querySelector(".title-bar-anim");
     const title = max.querySelector(".title-anim");
 
@@ -179,6 +180,11 @@ function maximize(elem) {
         titleBar.classList.add("anim-grow");
         title.style.display = "flex";
         title.classList.add("anim-grow");
+
+        setTimeout(750, () => {
+            max.style.setProperty("--win-width", "100vw");
+            max.style.setProperty("--win-height", "1052px");
+        })
 
         maxClicked = true;
     } else {
