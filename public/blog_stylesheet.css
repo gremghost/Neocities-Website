@@ -119,6 +119,10 @@
     --win-height: 749px;
     --win-top: 220px;
     --win-left: 220px;
+
+    --taskbutton-width: 0px;
+    --taskbutton-top: 0px;
+    --taskbutton-left: 0px;
     
     min-width: 112px;
     width: var(--win-width);
@@ -227,10 +231,10 @@
 }
 
 .max-shrink {
-    animation: 1 shrink .6s forwards;
+    animation: 1 maxShrink .6s forwards;
 }
 
-@keyframes shrink {
+@keyframes maxShrink {
     from {
         width: var(--win-width);
         left: var(--win-left);
@@ -240,6 +244,23 @@
         width: var(--resize-width);
         left: var(--resize-left);
         top: var(--resize-top);
+    }
+}
+
+.min-shrink {
+    animation: 1 minShrink .6s forwards;
+}
+
+@keyframes minShrink {
+    from {
+        width: var(--win-width);
+        left: var(--win-left);
+        top: var(--win-top);
+    }
+    to {
+        width: var(--taskbutton-width);
+        left: var(--taskbutton-left);
+        top: var(--taskbutton-top);
     }
 }
 

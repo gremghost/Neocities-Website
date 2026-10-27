@@ -37,9 +37,12 @@ function openWin(elem) {
     taskbarButton.setAttribute("data-id", elem.dataset.winId);
     taskbarButton.style.position = "relative";
     taskbarButton.style.width = "160px";
+    winOpen.style.setProperty("--taskbutton-width", taskbarButton.style.width)
     taskbarButton.style.height = "22px";
     taskbarButton.style.marginLeft = "3px;"
     taskbarButton.style.backgroundColor = "yellow";
+    winOpen.style.setProperty("--taskbutton-top", taskbarButton.style.top)
+    winOpen.style.setProperty("--taskbutton-left", taskbarButton.style.left)
 
     //put it in html inside taskbar
     taskbar.appendChild(taskbarButton);
@@ -129,10 +132,23 @@ for (const elem of minimizeButton) {
 
 function minimize(elem) {
     const min = document.getElementById(elem.getAttribute("data-id"));
+    const titleBar = min.querySelector(".title-bar-anim");
+    const title = min.querySelector(".title-anim");
     //console.log(min);
 
     //change style of element on html side to be display: none
-    min.style.display = "none";
+    titleBar.style.display = "flex";
+    title.style.display = "flex";
+    titleBar.classList.add("max-shrink");
+    title.classList.add("max-shrink");
+
+    setTimeout(() => {
+        min.style.setProperty("display", "none")
+        titleBar.style.display = "none";
+        title.style.display = "none";
+        titleBar.classList.remove("max-shrink");
+        title.classList.remove("max-shrink");
+    }, 500)
 
     //for each one, go to exist and make it exist again once clicked
     for (const elem of taskClose) {
@@ -201,8 +217,8 @@ function maximize(elem) {
 
         maxClicked = true;
     } else {
-        titleBar.style.display = "block";
-        title.style.display = "block";
+        titleBar.style.display = "flex";
+        title.style.display = "flex";
         titleBar.classList.add("max-shrink");
         title.classList.add("max-shrink");
 
