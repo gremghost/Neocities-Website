@@ -248,7 +248,7 @@
 }
 
 .min-shrink {
-    animation: 1 minShrink .6s forwards;
+    animation: 1 minShrink .4s forwards;
 }
 
 @keyframes minShrink {
@@ -261,6 +261,23 @@
         width: var(--taskbutton-width);
         left: var(--taskbutton-left);
         top: var(--taskbutton-top);
+    }
+}
+
+.min-grow {
+    animation: 1 minGrow .4s forwards;
+}
+
+@keyframes minGrow {
+    from {
+        width: var(--taskbutton-width);
+        left: var(--taskbutton-left);
+        top: var(--taskbutton-top);
+    }
+    to {
+        width: var(--win-width);
+        left: var(--win-left);
+        top: var(--win-top);
     }
 }
 

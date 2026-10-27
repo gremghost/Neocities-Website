@@ -38,15 +38,15 @@ function openWin(elem) {
     taskbarButton.setAttribute("data-id", elem.dataset.winId);
     taskbarButton.style.position = "relative";
     taskbarButton.style.width = "160px";
-    winOpen.style.setProperty("--taskbutton-width", taskbarButton.style.width)
+    winOpen.style.setProperty("--taskbutton-width", "160px")
     taskbarButton.style.height = "22px";
     taskbarButton.style.marginLeft = "3px;"
     taskbarButton.style.backgroundColor = "yellow";
 
     //put it in html inside taskbar
     taskbar.appendChild(taskbarButton);
-    winOpen.style.setProperty("--taskbutton-top", taskbarButton.getBoundingClientRect().top)
-    winOpen.style.setProperty("--taskbutton-left", taskbarButton.getBoundingClientRect().left)
+    winOpen.style.setProperty("--taskbutton-top", taskbarButton.getBoundingClientRect().top + "px")
+    winOpen.style.setProperty("--taskbutton-left", taskbarButton.getBoundingClientRect().left + "px")
 
 }
 //--ACTIVE vs INACTIVE STATE
@@ -149,7 +149,7 @@ function minimize(elem) {
         title.style.display = "none";
         titleBar.classList.remove("min-shrink");
         title.classList.remove("min-shrink");
-    }, 500)
+    }, 200)
 
     //for each one, go to exist and make it exist again once clicked
     for (const elem of taskClose) {
@@ -161,10 +161,23 @@ function minimize(elem) {
 
 function exist(elem) {
     const win = document.getElementById(elem.getAttribute("data-id"));
+    const titleBar = win.querySelector(".title-bar-anim");
+    const title = win.querySelector(".title-anim");
     //console.log(win);
 
     //change style of element on html side to be display: block
-    win.style.display = "block";
+    titleBar.style.display = "flex";
+    title.style.display = "flex";
+    titleBar.classList.add("min-grow");
+    title.classList.add("min-grow");
+
+    setTimeout(() => {
+        win.style.setProperty("display", "block")
+        titleBar.style.display = "none";
+        title.style.display = "none";
+        titleBar.classList.remove("min-grow");
+        title.classList.remove("min-grow");
+    }, 200)
 }
 
 //maximizing a window
