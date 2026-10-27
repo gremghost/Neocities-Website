@@ -104,8 +104,8 @@ function dragElement(elmnt) {
     pos3 = e.clientX;
     pos4 = e.clientY;
     // set the element's new position:
-    elmnt.style.top = (Math.max(0, Math.min(elmnt.offsetTop - pos2, desktopHeight - elmnt.clientHeight))) + "px";
-    elmnt.style.left = (Math.max(0, Math.min(elmnt.offsetLeft - pos1, desktopWidth - elmnt.clientWidth))) + "px";
+    elmnt.style.setProperty = ("--win-top", Math.max(0, Math.min(elmnt.offsetTop - pos2, desktopHeight - elmnt.clientHeight))) + "px";
+    elmnt.style.setProperty = ("--win-left", Math.max(0, Math.min(elmnt.offsetLeft - pos1, desktopWidth - elmnt.clientWidth))) + "px";
   }
 
   function closeDragElement() {
