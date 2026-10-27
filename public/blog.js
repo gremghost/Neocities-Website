@@ -27,9 +27,7 @@ function openWin(elem) {
 
     //opening window
     winOpen.style.display = "block";
-    winOpen.style.top = "0vh";
-    winOpen.style.left = "0vw";
-    
+
     //create taskbar button
     //bugs: 
     //needs a check to see if one was already created and if so, dont create another one
@@ -104,8 +102,8 @@ function dragElement(elmnt) {
     pos3 = e.clientX;
     pos4 = e.clientY;
     // set the element's new position:
-    elmnt.style.setProperty = ("--win-top", Math.max(0, Math.min(elmnt.offsetTop - pos2, desktopHeight - elmnt.clientHeight))) + "px";
-    elmnt.style.setProperty = ("--win-left", Math.max(0, Math.min(elmnt.offsetLeft - pos1, desktopWidth - elmnt.clientWidth))) + "px";
+    elmnt.style.setProperty("--win-top", Math.max(0, Math.min(elmnt.offsetTop - pos2, desktopHeight - elmnt.clientHeight))) + "px";
+    elmnt.style.setProperty("--win-left", Math.max(0, Math.min(elmnt.offsetLeft - pos1, desktopWidth - elmnt.clientWidth))) + "px";
   }
 
   function closeDragElement() {
