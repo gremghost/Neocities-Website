@@ -27,6 +27,8 @@ function openWin(elem) {
 
     //opening window
     winOpen.style.display = "block";
+    winOpen.style.top = "0vh";
+    winOpen.style.left = "0vw";
     
     //create taskbar button
     //bugs: 
@@ -167,6 +169,7 @@ function maximize(elem) {
 
     const max = document.getElementById(elem.getAttribute("data-id"));
     const titleBar = max.querySelector(".title-bar-anim");
+    const title = max.querySelector(".title-anim");
 
     if (maxClicked != true) {
         //store previous width and height
@@ -174,13 +177,10 @@ function maximize(elem) {
         previousHeight = max.style.height;
 
         //maximize window
-        titleBar.style.position = "fixed";
         titleBar.style.display = "flex";
         titleBar.classList.add("anim-grow");
-        //max.style.width = "1024px";
-        //max.style.height = "740px";
-        //max.style.top = "0px";
-        //max.style.left = "0px";
+        title.style.display = "flex";
+        title.classList.add("anim-grow");
 
         maxClicked = true;
     } else {

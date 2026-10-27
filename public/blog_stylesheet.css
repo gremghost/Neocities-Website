@@ -135,13 +135,6 @@
     background-color: #C0C0C0;
 }
 
-#title-bar-values {
-    /*update these variables, not the properties themselves*/
-    --window-width: 442px;
-    --window-left: 668px;
-    --window-top: 34px;
-}
-
 .title-bar {
     display: flex;
     flex-flow: row nowrap; /* display them horizontally */
@@ -198,6 +191,7 @@
 
 /*title bar animations*/
 .title-bar-anim {
+    position: fixed;
     display: none;
     flex-flow: row nowrap; /* display them horizontally */
     align-items: center;
@@ -212,17 +206,19 @@
 }
 
 .anim-grow {
-    animation: 1 scale 5s;
+    animation: 1 scale .75s forwards;
 }
 
 @keyframes scale {
     from {
-        width: calc(100% - 16px);
-        height: 10px;
+        width: var(--win-width);
+        left: var(--win-left);
+        top: var(--win-top);
     }
     to {
         width: 100%;
-        height: 10px;
+        top: 0;
+        left: 0;
     }
 }
 
@@ -235,10 +231,7 @@
     font-family: "MS Sans Serif";
     font-size: 8pt;
     text-overflow: ellipsis;
-    
-    position: inherit;
-    top: 3px;
-    left: 21px;
+    font-weight: bold;
 
     color: white;
 
@@ -251,8 +244,6 @@
 }
 
 .icon-anim {
-    position: inherit;
-
     width: 15px;
     height: 13px;
 
