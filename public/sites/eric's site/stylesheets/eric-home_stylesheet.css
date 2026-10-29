@@ -1,0 +1,149 @@
+/*main page layout*/
+html {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    position: fixed;
+
+    left: 507px;
+
+    width: 800px;
+    height: 100vh;
+    margin-top: 0px; 
+}
+
+
+.header {
+    position: fixed;
+
+    width: 800px;
+    height: 150px;
+
+    background: url(/backgrounds/007.gif)
+}
+
+.nav {
+    position: fixed;
+
+    width: 800px;
+    height: 50px;
+
+    top: 158px;
+
+    background: url(/backgrounds/007.gif)
+}
+
+.column-1 {
+    position: fixed;
+
+    top: 208px; 
+
+    height: 78.5vh;
+    width: 175px;
+    
+    background-color: purple;
+}
+
+.div4 {
+    width: 400px;
+    height: 78.5vh;
+}
+
+.content-area-1 {
+    position: fixed;
+
+    top: 58.7vh;
+    left: 682px;
+
+    width: 450px;
+    height: 200px;
+
+    background-color: lime;
+}
+
+.content-area-2 {
+    position: fixed;
+
+    top: 79.4vh;
+    left: 682px;
+
+
+    width: 450px;
+    height: 200px;
+
+    background-color: teal;
+}
+
+.column-2 {
+    position: relative;
+
+    top: 200px;
+    left: 625px;
+
+    height: 78.5vh;
+    width: 175px;
+    
+    background-color: magenta;
+}
+
+/*content*/
+
+#logo {
+    position: relative;
+    
+    top: -1.5em;
+    margin-left: 10px;
+    width: 400px;
+}
+
+#eric {
+    position: inherit;
+    width: 100px;
+
+}
+
+#proudly {
+    position: inherit;
+    
+    width: 775px;
+
+    left: 32.5em;
+    top: 7.5em;
+}
+
+/*navigation*/
+
+#sitedir {
+    font-family: "Bowlby One";
+    color: white;
+
+    margin-left: -5px;
+    margin-right: 25px;
+
+    font-size: 25px;
+    text-shadow: 2px 2px 3px black;
+}
+
+#universe {
+    font-family: "Bowlby One";
+    color: white;
+
+    margin-right: 25px;
+
+    font-size: 25px;
+    text-shadow: 2px 2px 3px black;
+}
+
+#about {
+    font-family: "Bowlby One";
+    color: white;
+
+    font-size: 25px;
+    text-shadow: 2px 2px 3px black;
+}
