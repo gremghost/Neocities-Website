@@ -1,0 +1,15 @@
+/*this is stolen from YTMND bc that's the point as its obv supposed to be a YTMND like page*/
+div {
+    position: absolute;
+    width: 815px;
+}
+
+#zoom-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 815px;
+    z-index: 10;
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+}
