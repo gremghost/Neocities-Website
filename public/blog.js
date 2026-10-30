@@ -1,5 +1,15 @@
-const desktopWidth = document.body.clientWidth;
-const desktopHeight = document.body.clientHeight;
+//for page size specifically
+var desktopWidth = window.outerWidth;
+var desktopHeight = window.outerHeight;
+
+function variableInitalize() {
+    desktopWidth = window.outerWidth;
+    desktopHeight = window.outerHeight;
+}
+
+
+var manualWidth;
+var manualHeight;
 
 const taskbar = document.getElementById("bar-buttons");
 
@@ -137,19 +147,29 @@ function minimize(elem) {
     const title = min.querySelector(".title-anim");
     //console.log(min);
 
+    manualWidth = min.style.width;
+    console.log("manualWidth = ", manualWidth);
+    manualHeight = min.style.height;
+    console.log("manualHeight = ", manualHeight);
+
     //change style of element on html side to be display: none
     titleBar.style.display = "flex";
     title.style.display = "flex";
     titleBar.classList.add("min-shrink");
     title.classList.add("min-shrink");
+    
+    min.style.setProperty("--win-width", manualWidth || min.style.getPropertyValue("--win-width"))
+    min.style.setProperty("--win-height", manualHeight || min.style.getPropertyValue("--win-height"))
 
     setTimeout(() => {
-        min.style.setProperty("display", "none")
+        min.classList.remove("min-get-the-fuck-back-here");
+        min.classList.add("min-get-the-fuck-out-of-the-way");
+        document.body.style.overflow = "hidden";
         titleBar.style.display = "none";
         title.style.display = "none";
         titleBar.classList.remove("min-shrink");
         title.classList.remove("min-shrink");
-    }, 200)
+    }, 300)
 
     //for each one, go to exist and make it exist again once clicked
     for (const elem of taskClose) {
@@ -172,12 +192,13 @@ function exist(elem) {
     title.classList.add("min-grow");
 
     setTimeout(() => {
-        win.style.setProperty("display", "block")
+        win.classList.remove("min-get-the-fuck-out-of-the-way");
+        win.classList.add("min-get-the-fuck-back-here")
         titleBar.style.display = "none";
         title.style.display = "none";
         titleBar.classList.remove("min-grow");
         title.classList.remove("min-grow");
-    }, 200)
+    }, 300)
 }
 
 //maximizing a window
@@ -205,9 +226,14 @@ function maximize(elem) {
     const title = max.querySelector(".title-anim");
 
     if (maxClicked != true) {
-        //store previous width and height
+        max.style.setProperty("--win-width", max.style.width || max.style.getPropertyValue("--win-width"))
+        max.style.setProperty("--win-height", max.style.height || max.style.getPropertyValue("--win-height"))
+
+        //store previous width and height (note that these are different than the manual resizing info)
         previousWidth = max.style.getPropertyValue("--win-width")
+        console.log("previousWidth = ", previousWidth);
         previousHeight = max.style.getPropertyValue("--win-height");
+        console.log("previousHeight = ", previousHeight);
         previousTop = max.style.getPropertyValue("--win-top")
         previousLeft = max.style.getPropertyValue("--win-left")
 
@@ -219,7 +245,9 @@ function maximize(elem) {
 
         setTimeout(() => {
             max.style.setProperty("--win-width", "100%");
+            max.style.setProperty("width", "100%");
             max.style.setProperty("--win-height", "calc(100% - 28px)");
+            max.style.setProperty("height", "calc(100% - 28px)");
             max.style.setProperty("--win-top", "0");
             max.style.setProperty("--win-left", "0");
             max.style.setProperty("resize", "none")
@@ -227,7 +255,7 @@ function maximize(elem) {
             title.style.display = "none";
             titleBar.classList.remove("max-grow");
             title.classList.remove("max-grow");
-        }, 500)
+        }, 300)
 
         maxClicked = true;
     } else {
@@ -237,8 +265,8 @@ function maximize(elem) {
         title.classList.add("max-shrink");
 
         setTimeout(() => {
-            max.style.setProperty("--win-width", previousWidth);
-            max.style.setProperty("--win-height", previousHeight);
+            max.style.setProperty("--win-width", max.style.width || previousWidth);
+            max.style.setProperty("--win-height", max.style.height || previousHeight);
             max.style.setProperty("--win-top", previousTop);
             max.style.setProperty("--win-left", previousLeft);
             max.style.setProperty("resize", "both")
@@ -246,7 +274,7 @@ function maximize(elem) {
             title.style.display = "none";
             titleBar.classList.remove("max-shrink");
             title.classList.remove("max-shrink");
-        }, 500)
+        }, 300)
         maxClicked = false;
     }
 }

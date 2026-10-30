@@ -11,10 +11,8 @@
     font-weight: bold;
 }
 
-
-.html {
-    width: 1024px;
-    height: 768px;
+body {
+    height: calc(100vh - 28px);
 }
 
 /*taskbar and associated stuff CSS*/
@@ -214,7 +212,7 @@
 }
 
 .max-grow {
-    animation: 1 scale .6s forwards;
+    animation: 1 scale .3s forwards;
 }
 
 @keyframes scale {
@@ -231,7 +229,7 @@
 }
 
 .max-shrink {
-    animation: 1 maxShrink .6s forwards;
+    animation: 1 maxShrink .3s forwards;
 }
 
 @keyframes maxShrink {
@@ -279,6 +277,26 @@
         left: var(--win-left);
         top: var(--win-top);
     }
+}
+
+.min-get-the-fuck-out-of-the-way {
+    animation: 1 getOutOfTheWay 0s forwards;
+}
+
+
+@keyframes getOutOfTheWay {
+    from {
+        left: var(--win-left);
+        top: var(--win-top);
+    }
+    to {
+        left: 1000000000000px;
+        top: 1000000000000px;
+    }
+}
+
+.min-get-the-fuck-back-here {
+    animation: 1 getOutOfTheWay 0s reverse forwards;
 }
 
 .title-bar-anim .title-anim {
